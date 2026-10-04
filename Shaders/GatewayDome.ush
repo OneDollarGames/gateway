@@ -157,7 +157,7 @@ float3 gw_mode(int mode, float3 d, float z, float2 p, float ang, float rr, float
 }
 
 float3 GatewayDome(float3 dir, float3 fwd, float modeA, float modeB, float mixAB, float3 color, float intensity, float speed, float complexity, float hue, float breath, float t,
-	float guide, Texture2D imgA, SamplerState imgAS, Texture2D imgB, SamplerState imgBS)
+	float guide, float flickerHz, float flickerDepth, float flickerShape, float3 flickerColor, float fade, Texture2D imgA, SamplerState imgAS, Texture2D imgB, SamplerState imgBS)
 {
 	float3 d = normalize(dir);
 	float3 f = normalize(fwd);
@@ -183,6 +183,14 @@ float3 GatewayDome(float3 dir, float3 fwd, float modeA, float modeB, float mixAB
 		float fixedRing = exp(-pow((rr - 0.16) / 0.003, 2.0)) * 0.25;
 		c += (ring * 0.9 + fixedRing) * guide * float3(0.85, 0.92, 1.0);
 	}
+	// Flicker fotico y fundido dentro del domo (ruta movil/Quest: sin material de post-proceso)
+	float on = step(0.01, flickerHz);
+	float ph = frac(t * flickerHz);
+	float pulseSin = 0.5 + 0.5 * sin(GW_TAU * ph);
+	float pulseSq = step(ph, 0.4);
+	float pulse = lerp(pulseSin, pulseSq, saturate(flickerShape));
+	c = lerp(c, flickerColor, saturate(flickerDepth) * pulse * on);
+	c *= (1.0 - saturate(fade));
 	return c;
 }
 

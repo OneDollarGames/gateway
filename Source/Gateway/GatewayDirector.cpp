@@ -57,7 +57,9 @@ void AGatewayDirector::BeginPlay()
 	Devices = NewObject<UGatewayAudioDevices>(this);
 	if (Synth && !Synth->IsPlaying()) { Synth->Start(); }
 	ApplyUserGains();
+#if !PLATFORM_ANDROID
 	AutoSelectDevice();
+#endif
 
 	if (Settings.bFullscreen)
 	{

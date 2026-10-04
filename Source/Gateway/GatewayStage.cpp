@@ -177,7 +177,11 @@ void AGatewayStage::BeginPlay()
 		ParticleMID = UMaterialInstanceDynamic::Create(StarBase, this);
 		Particles->SetMaterial(0, ParticleMID);
 	}
+#if PLATFORM_ANDROID
+	InitParticles(600);
+#else
 	InitParticles(1200);
+#endif
 
 	// Post-proceso global
 	FActorSpawnParameters P; P.Owner = this;
@@ -199,7 +203,12 @@ void AGatewayStage::BeginPlay()
 		S.bOverride_DynamicGlobalIlluminationMethod = true; S.DynamicGlobalIlluminationMethod = EDynamicGlobalIlluminationMethod::None;
 		S.bOverride_ReflectionMethod = true; S.ReflectionMethod = EReflectionMethod::None;
 		S.bOverride_AmbientOcclusionIntensity = true; S.AmbientOcclusionIntensity = 0.f;
-		if (UMaterialInterface* PostBase = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/Gateway/Materials/M_Post.M_Post")))
+		UMaterialInterface* PostBase = nullptr;
+#if !PLATFORM_ANDROID
+		// Quest nativo: sin Mobile HDR no hay materiales de post-proceso; el domo hace flicker y fundido
+		PostBase = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/Gateway/Materials/M_Post.M_Post"));
+#endif
+		if (PostBase)
 		{
 			PostMID = UMaterialInstanceDynamic::Create(PostBase, this);
 			S.WeightedBlendables.Array.Add(FWeightedBlendable(1.f, PostMID));
@@ -310,6 +319,13 @@ void AGatewayStage::ApplyParams()
 		DomeMID->SetScalarParameterValue(TEXT("Breath"), BreathNow);
 		DomeMID->SetScalarParameterValue(TEXT("SceneTime"), SceneTime);
 		DomeMID->SetScalarParameterValue(TEXT("Guide"), GuideNow);
+		// Sin post-proceso (Quest nativo) el domo aplica el flicker y el fundido
+		const bool bDomeFX = (PostMID == nullptr);
+		DomeMID->SetScalarParameterValue(TEXT("FlickerHz"), bDomeFX ? FlickerNow.Hz : 0.f);
+		DomeMID->SetScalarParameterValue(TEXT("FlickerDepth"), bDomeFX ? FlickerNow.Depth * FlickerUserScale : 0.f);
+		DomeMID->SetScalarParameterValue(TEXT("FlickerShape"), FlickerNow.Shape);
+		DomeMID->SetVectorParameterValue(TEXT("FlickerColor"), FlickerNow.Color);
+		DomeMID->SetScalarParameterValue(TEXT("Fade"), bDomeFX ? FadeNow : 0.f);
 		DomeMID->SetVectorParameterValue(TEXT("ViewForward"), FLinearColor(ViewForward.X, ViewForward.Y, ViewForward.Z, 0.f));
 		if (CurA.Image) { DomeMID->SetTextureParameterValue(TEXT("ImageA"), CurA.Image); }
 		if (CurB.Image) { DomeMID->SetTextureParameterValue(TEXT("ImageB"), CurB.Image); }

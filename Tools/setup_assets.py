@@ -169,7 +169,7 @@ def import_models():
 # ---------------------------------------------------------------- M_Dome
 
 DOME_CODE = """return GatewayDome(-Dir, Fwd, ModeA, ModeB, Mix, Color, Intensity, Speed, Complexity, Hue, Breath, SceneTime,
-    Guide, ImageA, ImageASampler, ImageB, ImageBSampler);"""
+    Guide, FlickerHz, FlickerDepth, FlickerShape, FlickerColor, Fade, ImageA, ImageASampler, ImageB, ImageBSampler);"""
 
 
 def make_dome(textures):
@@ -192,14 +192,19 @@ def make_dome(textures):
     breath = scalar(mat, "Breath", 0.5, -900, 300)
     stime = scalar(mat, "SceneTime", 0, -900, 360)
     guide = scalar(mat, "Guide", 0, -900, 400)
+    d_hz = scalar(mat, "FlickerHz", 0, -1200, -300)
+    d_depth = scalar(mat, "FlickerDepth", 0, -1200, -240)
+    d_shape = scalar(mat, "FlickerShape", 0, -1200, -180)
+    d_col = vector(mat, "FlickerColor", (1, 1, 1, 1), -1200, -120)
+    d_fade = scalar(mat, "Fade", 0, -1200, -40)
     default_tex = textures.get("T_Nebula01") or unreal.load_asset("/Engine/EngineResources/DefaultTexture")
     img_a = texture_param(mat, "ImageA", default_tex, -900, 440)
     img_b = texture_param(mat, "ImageB", default_tex, -900, 560)
 
-    inputs = ["Dir", "Fwd", "ModeA", "ModeB", "Mix", "Color", "Intensity", "Speed", "Complexity", "Hue", "Breath", "SceneTime", "Guide", "ImageA", "ImageB"]
+    inputs = ["Dir", "Fwd", "ModeA", "ModeB", "Mix", "Color", "Intensity", "Speed", "Complexity", "Hue", "Breath", "SceneTime", "Guide", "FlickerHz", "FlickerDepth", "FlickerShape", "FlickerColor", "Fade", "ImageA", "ImageB"]
     cu = custom_node(mat, DOME_CODE, inputs, ["/Gateway/GatewayDome.ush"], -350, 0, "Gateway dome (Shaders/GatewayDome.ush)")
     for node, name in [(cam, "Dir"), (fwd, "Fwd"), (mode_a, "ModeA"), (mode_b, "ModeB"), (mix, "Mix"), (color, "Color"), (inten, "Intensity"),
-                       (speed, "Speed"), (cplx, "Complexity"), (hue, "Hue"), (breath, "Breath"), (stime, "SceneTime"), (guide, "Guide"), (img_a, "ImageA"), (img_b, "ImageB")]:
+                       (speed, "Speed"), (cplx, "Complexity"), (hue, "Hue"), (breath, "Breath"), (stime, "SceneTime"), (guide, "Guide"), (d_hz, "FlickerHz"), (d_depth, "FlickerDepth"), (d_shape, "FlickerShape"), (d_col, "FlickerColor"), (d_fade, "Fade"), (img_a, "ImageA"), (img_b, "ImageB")]:
         connect(node, cu, name)
     MEL.connect_material_property(cu, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR)
     MEL.recompile_material(mat)
