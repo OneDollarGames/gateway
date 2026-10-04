@@ -387,14 +387,14 @@
    "visual": {
     "modo": "cosmos",
     "color": [
-     0.25,
-     0.35,
-     0.9
+     0.1,
+     0.14,
+     0.38
     ],
-    "intensidad": 0.35,
-    "velocidad": 0.08,
+    "intensidad": 0.15,
+    "velocidad": 0.03,
     "complejidad": 0.5,
-    "imagen": "T_Nebula01"
+    "imagen": "T_Galaxy01"
    },
    "flicker": {
     "hz": 0,

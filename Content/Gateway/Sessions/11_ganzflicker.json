@@ -289,14 +289,14 @@
    "visual": {
     "modo": "cosmos",
     "color": [
-     0.2,
-     0.25,
-     0.7
+     0.08,
+     0.1,
+     0.3
     ],
-    "intensidad": 0.22,
-    "velocidad": 0.04,
+    "intensidad": 0.11,
+    "velocidad": 0.02,
     "complejidad": 0.5,
-    "imagen": "T_Nebula02"
+    "imagen": "T_Nebula03"
    },
    "flicker": {
     "hz": 0,

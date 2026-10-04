@@ -33,6 +33,14 @@ private:
 	// VR (Quest Touch)
 	void VrA(); void VrB(); void VrX(); void VrY(); void VrStickUp(); void VrStickDown(); void VrStickLeft(); void VrStickRight(); void VrSkip(); void VrMenu();
 	bool bVR = false;
+	// Sticks como ejes (OpenXR no manda las teclas digitales Thumbstick_Up/Down): umbral + rearme
+	float AxLX = 0.f, AxLY = 0.f, AxRX = 0.f, AxRY = 0.f;
+	int32 ArmLY = 0, ArmLX = 0, ArmRX = 0, ArmRY = 0;
+	void AxisRY(float V) { AxRY = V; }
+	void AxisLX(float V) { AxLX = V; }
+	void AxisLY(float V) { AxLY = V; }
+	void AxisRX(float V) { AxRX = V; }
+	void TickSticks();
 };
 
 UCLASS()

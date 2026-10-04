@@ -4,6 +4,7 @@
 #include "GatewayAudioDevices.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/TextRenderComponent.h"
+#include "Components/PointLightComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Materials/MaterialInterface.h"
 #include "Materials/MaterialInstanceDynamic.h"
@@ -44,6 +45,15 @@ AGatewayVRPanel::AGatewayVRPanel()
 	Backdrop->SetCastShadow(false);
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> PanelMat(TEXT("/Game/Gateway/Materials/M_Panel.M_Panel"));
 	if (PanelMat.Succeeded()) { Backdrop->SetMaterial(0, PanelMat.Object); }
+
+	Light = CreateDefaultSubobject<UPointLightComponent>(TEXT("Light"));
+	Light->SetupAttachment(Root);
+	Light->SetRelativeLocation(FVector(-140.f, 0.f, 20.f));
+	Light->SetIntensity(2500.f);
+	Light->SetAttenuationRadius(450.f);
+	Light->SetLightColor(FLinearColor(1.f, 1.f, 1.f));
+	Light->SetCastShadows(false);
+	Light->SetMobility(EComponentMobility::Movable);
 
 	// Textos (x = -1 cm delante del panel; y = horizontal; z = vertical)
 	Title = MakeText(this, Root, TEXT("Title"), 9.f, FVector(-1.f, 0.f, 58.f), EHTA_Center, FColor(255, 220, 140));
@@ -97,6 +107,7 @@ void AGatewayVRPanel::SetVisibleSmooth(bool bVisible, float Dt)
 	PanelAlpha = FMath::FInterpTo(PanelAlpha, bVisible ? 1.f : 0.f, Dt, 3.f);
 	const bool bShow = PanelAlpha > 0.02f;
 	Backdrop->SetVisibility(bShow);
+	if (Light) { Light->SetVisibility(bShow); }
 	Title->SetVisibility(bShow); Body->SetVisibility(bShow); Detail->SetVisibility(bShow); Footer->SetVisibility(bShow);
 }
 
@@ -107,7 +118,8 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 	if (!D) return;
 	const EGatewayState St = D->GetState();
 	const bool bMenuState = (St != EGatewayState::Running);
-	if (bMenuState && bNeedsRecenter) { Recenter(); }
+	StartupRecenter += DeltaSeconds;
+	if (bMenuState && (bNeedsRecenter || (StartupRecenter > 1.5f && StartupRecenter < 1.5f + DeltaSeconds) || (StartupRecenter > 4.f && StartupRecenter < 4.f + DeltaSeconds))) { Recenter(); }
 	if (!bMenuState) { bNeedsRecenter = true; }
 	SetVisibleSmooth(bMenuState, DeltaSeconds);
 
@@ -134,14 +146,14 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 			Dt2 = Wrap(S[Sel].Title + TEXT("\n") + S[Sel].Wave + TEXT("\n\n") + S[Sel].Description, 44);
 			if (S[Sel].bUsesFlicker) { Dt2 += TEXT("\n(Incluye luz intermitente: ojos cerrados)"); }
 		}
-		Ft = TEXT("Stick izq: elegir   A / gatillo: comenzar   X: ajustes   Y: recentrar panel   B: ayuda");
+		Ft = TEXT("Stick der: elegir   A: comenzar   B: ayuda   click del stick: ajustes   gatillo: recentrar panel");
 		if (D->GetDevices()) { Ft += TEXT("\nSalida: ") + D->GetDevices()->CurrentName(); }
 		break;
 	}
 	case EGatewayState::Warning:
 		T = TEXT("Antes de continuar: luz intermitente");
 		B = Wrap(TEXT("Esta sesion incluye luz intermitente (flicker) de 4 a 12 Hz. Puede provocar crisis en personas con epilepsia fotosensible.\n\nNO la uses si tienes epilepsia o convulsiones (o un familiar directo), migrana con aura, psicosis, embarazo, psicofarmacos sin consultar, o eres menor.\n\nManten los OJOS CERRADOS durante el flicker. Si notas malestar, pulsa B: la luz se apaga.\n\nPuedes dejar el flicker en 0 en Ajustes. Al aceptar confirmas que no tienes contraindicaciones."), 60);
-		Ft = TEXT("A / gatillo: acepto y continuo      B: volver");
+		Ft = TEXT("A: acepto y continuo      B: volver");
 		break;
 	case EGatewayState::Settings:
 	{
@@ -157,7 +169,7 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 			FString::Printf(TEXT("Salida de audio: %s"), D->GetDevices() ? *D->GetDevices()->CurrentName() : TEXT("")),
 		};
 		for (int32 i = 0; i < 6; ++i) { B += FString::Printf(TEXT("%s %s\n"), i == Sel ? TEXT(">") : TEXT(" "), *Rows[i]); }
-		Ft = TEXT("Stick izq arriba/abajo: elegir   izq/der: ajustar   A: entrar   B: volver");
+		Ft = TEXT("Stick der arriba/abajo: elegir   izq/der: ajustar   A: entrar   B: volver");
 		break;
 	}
 	case EGatewayState::Devices:
@@ -193,7 +205,7 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 		if ((D->bShowOverlay || D->IsPaused()) && Cs && !Cs->bNight)
 		{
 			const int32 E = int32(D->GetElapsed()), Tt = int32(Cs->TotalSeconds);
-			Ov = FString::Printf(TEXT("%s\n%s\n%d:%02d / %d:%02d%s"), *Cs->Title, Sg ? *Sg->Name : TEXT(""), E / 60, E % 60, Tt / 60, Tt % 60, D->IsPaused() ? TEXT("\n\nPAUSA  (X continuar, B terminar)") : TEXT(""));
+			Ov = FString::Printf(TEXT("%s\n%s\n%d:%02d / %d:%02d%s"), *Cs->Title, Sg ? *Sg->Name : TEXT(""), E / 60, E % 60, Tt / 60, Tt % 60, D->IsPaused() ? TEXT("\n\nPAUSA  (A continuar, B terminar)") : TEXT(""));
 		}
 		break;
 	}

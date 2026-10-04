@@ -152,6 +152,7 @@ void AGatewayHUD::DrawHUD()
 	Super::DrawHUD();
 	AGatewayDirector* D = AGatewayDirector::Get(GetWorld());
 	if (!D || !Canvas) return;
+	if (D->bVR) return; // en el visor el menu es el panel 3D; el canvas se proyectaria encima
 	switch (D->GetState())
 	{
 	case EGatewayState::Menu: DrawMenu(D); break;

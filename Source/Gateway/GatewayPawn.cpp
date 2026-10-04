@@ -45,8 +45,9 @@ void AGatewayPawn::SetupPlayerInputComponent(UInputComponent* In)
 
 	// Mandos Touch del Quest (OpenXR): A/gatillo confirmar, B volver, X pausa/ajustes, Y recentrar, sticks navegar
 	In->BindKey(EKeys::OculusTouch_Right_A_Click, IE_Pressed, this, &AGatewayPawn::VrA);
-	In->BindKey(EKeys::OculusTouch_Right_Trigger_Click, IE_Pressed, this, &AGatewayPawn::VrA);
-	In->BindKey(EKeys::OculusTouch_Left_Trigger_Click, IE_Pressed, this, &AGatewayPawn::VrA);
+	// Solo mando derecho: A confirmar/pausa, B volver, click del stick = ajustes/pausa, gatillo = recentrar
+	In->BindKey(EKeys::OculusTouch_Right_Trigger_Click, IE_Pressed, this, &AGatewayPawn::VrY);
+	In->BindKey(EKeys::OculusTouch_Right_Thumbstick_Click, IE_Pressed, this, &AGatewayPawn::VrX);
 	In->BindKey(EKeys::OculusTouch_Right_B_Click, IE_Pressed, this, &AGatewayPawn::VrB);
 	In->BindKey(EKeys::OculusTouch_Left_X_Click, IE_Pressed, this, &AGatewayPawn::VrX);
 	In->BindKey(EKeys::OculusTouch_Left_Y_Click, IE_Pressed, this, &AGatewayPawn::VrY);
@@ -58,6 +59,10 @@ void AGatewayPawn::SetupPlayerInputComponent(UInputComponent* In)
 	In->BindKey(EKeys::OculusTouch_Right_Thumbstick_Down, IE_Pressed, this, &AGatewayPawn::VrStickDown);
 	In->BindKey(EKeys::OculusTouch_Right_Thumbstick_Right, IE_Pressed, this, &AGatewayPawn::VrSkip);
 	In->BindKey(EKeys::OculusTouch_Left_Menu_Click, IE_Pressed, this, &AGatewayPawn::VrMenu);
+	In->BindAxisKey(EKeys::OculusTouch_Left_Thumbstick_X, this, &AGatewayPawn::AxisLX);
+	In->BindAxisKey(EKeys::OculusTouch_Left_Thumbstick_Y, this, &AGatewayPawn::AxisLY);
+	In->BindAxisKey(EKeys::OculusTouch_Right_Thumbstick_X, this, &AGatewayPawn::AxisRX);
+	In->BindAxisKey(EKeys::OculusTouch_Right_Thumbstick_Y, this, &AGatewayPawn::AxisRY);
 
 	bVR = UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled();
 	if (bVR)
@@ -113,6 +118,26 @@ void AGatewayPawn::Tick(float DeltaSeconds)
 	Yaw = FMath::FInterpTo(Yaw, TargetYaw, DeltaSeconds, 2.f);
 	Pitch = FMath::FInterpTo(Pitch, TargetPitch, DeltaSeconds, 2.f);
 	if (!bVR) { Camera->SetRelativeRotation(FRotator(Pitch, Yaw, 0.f)); }
+	TickSticks();
+}
+
+void AGatewayPawn::TickSticks()
+{
+	auto Step = [](float V, int32& Arm) -> int32
+	{
+		if (V > 0.6f && Arm != 1) { Arm = 1; return 1; }
+		if (V < -0.6f && Arm != -1) { Arm = -1; return -1; }
+		if (FMath::Abs(V) < 0.3f) { Arm = 0; }
+		return 0;
+	};
+	const int32 Y = Step(AxLY, ArmLY);
+	if (Y > 0) KeyUp(); else if (Y < 0) KeyDown();
+	const int32 X = Step(AxLX, ArmLX);
+	if (X > 0) VrStickRight(); else if (X < 0) KeyLeft();
+	const int32 RX = Step(AxRX, ArmRX);
+	if (RX > 0) VrSkip(); else if (RX < 0) KeyLeft();
+	const int32 RY = Step(AxRY, ArmRY);
+	if (RY > 0) KeyUp(); else if (RY < 0) KeyDown();
 }
 
 void AGatewayPawn::KeyUp() { if (AGatewayDirector* D = Director()) D->MenuMove(-1); }

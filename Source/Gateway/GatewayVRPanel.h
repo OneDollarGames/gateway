@@ -6,6 +6,7 @@
 
 class UStaticMeshComponent;
 class UTextRenderComponent;
+class UPointLightComponent;
 class AGatewayDirector;
 
 // Menu flotante para el visor (Quest): el HUD de canvas no se ve en VR, asi que el menu,
@@ -25,6 +26,7 @@ public:
 private:
 	UPROPERTY() USceneComponent* Root = nullptr;
 	UPROPERTY() UStaticMeshComponent* Backdrop = nullptr;
+	UPROPERTY() UPointLightComponent* Light = nullptr;  // el material de texto es lit: sin luz sale negro
 	UPROPERTY() UTextRenderComponent* Title = nullptr;
 	UPROPERTY() UTextRenderComponent* Body = nullptr;
 	UPROPERTY() UTextRenderComponent* Detail = nullptr;
@@ -35,6 +37,7 @@ private:
 	bool bPanelVisible = true;
 	float PanelAlpha = 1.f;
 	bool bNeedsRecenter = true;
+	float StartupRecenter = 0.f;   // recentrar de nuevo cuando el visor ya tiene pose (1.5 s y 4 s)
 
 	static FString Wrap(const FString& S, int32 MaxChars);
 	void SetVisibleSmooth(bool bVisible, float Dt);

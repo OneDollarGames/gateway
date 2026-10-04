@@ -94,10 +94,11 @@ SONIDO = {
 # ----------------------------------------------------------------------------- visuales del domo
 
 VISUAL = {
-    "cosmos": {"modo": "cosmos", "color": [0.25, 0.35, 0.9], "intensidad": 0.35, "velocidad": 0.08, "complejidad": 0.5, "imagen": "T_Nebula01"},
-    "cosmos_lento": {"modo": "cosmos", "color": [0.2, 0.25, 0.7], "intensidad": 0.22, "velocidad": 0.04, "complejidad": 0.5, "imagen": "T_Nebula02"},
-    "galaxia": {"modo": "cosmos", "color": [0.5, 0.4, 0.9], "intensidad": 0.3, "velocidad": 0.06, "complejidad": 0.5, "imagen": "T_Galaxy01"},
-    "anillo": {"modo": "cosmos", "color": [0.3, 0.6, 0.9], "intensidad": 0.3, "velocidad": 0.05, "complejidad": 0.5, "imagen": "T_Nebula03"},
+    # Cosmos tenues: galaxia/anillo en indigo suave, muy lentos (los Pilares de la Creacion resultaban incomodos)
+    "cosmos": {"modo": "cosmos", "color": [0.10, 0.14, 0.38], "intensidad": 0.15, "velocidad": 0.03, "complejidad": 0.5, "imagen": "T_Galaxy01"},
+    "cosmos_lento": {"modo": "cosmos", "color": [0.08, 0.10, 0.30], "intensidad": 0.11, "velocidad": 0.02, "complejidad": 0.5, "imagen": "T_Nebula03"},
+    "galaxia": {"modo": "cosmos", "color": [0.18, 0.14, 0.42], "intensidad": 0.18, "velocidad": 0.03, "complejidad": 0.5, "imagen": "T_Galaxy01"},
+    "anillo": {"modo": "cosmos", "color": [0.12, 0.22, 0.42], "intensidad": 0.16, "velocidad": 0.025, "complejidad": 0.5, "imagen": "T_Nebula03"},
     "ganz_azul": {"modo": "ganzfeld", "color": [0.05, 0.12, 0.45], "intensidad": 0.5, "velocidad": 0.2},
     "ganz_violeta": {"modo": "ganzfeld", "color": [0.25, 0.05, 0.45], "intensidad": 0.5, "velocidad": 0.2},
     "ganz_rojo": {"modo": "ganzfeld", "color": [0.9, 0.22, 0.04], "intensidad": 0.6, "velocidad": 0.15},

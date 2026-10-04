@@ -226,12 +226,12 @@
    "visual": {
     "modo": "cosmos",
     "color": [
-     0.5,
-     0.4,
-     0.9
+     0.18,
+     0.14,
+     0.42
     ],
-    "intensidad": 0.3,
-    "velocidad": 0.06,
+    "intensidad": 0.18,
+    "velocidad": 0.03,
     "complejidad": 0.5,
     "imagen": "T_Galaxy01"
    },
@@ -285,12 +285,12 @@
    "visual": {
     "modo": "cosmos",
     "color": [
-     0.3,
-     0.6,
-     0.9
+     0.12,
+     0.22,
+     0.42
     ],
-    "intensidad": 0.3,
-    "velocidad": 0.05,
+    "intensidad": 0.16,
+    "velocidad": 0.025,
     "complejidad": 0.5,
     "imagen": "T_Nebula03"
    },
@@ -348,12 +348,12 @@
    "visual": {
     "modo": "cosmos",
     "color": [
-     0.5,
-     0.4,
-     0.9
+     0.18,
+     0.14,
+     0.42
     ],
-    "intensidad": 0.3,
-    "velocidad": 0.06,
+    "intensidad": 0.18,
+    "velocidad": 0.03,
     "complejidad": 0.5,
     "imagen": "T_Galaxy01"
    },
@@ -489,14 +489,14 @@
    "visual": {
     "modo": "cosmos",
     "color": [
-     0.25,
-     0.35,
-     0.9
+     0.1,
+     0.14,
+     0.38
     ],
-    "intensidad": 0.35,
-    "velocidad": 0.08,
+    "intensidad": 0.15,
+    "velocidad": 0.03,
     "complejidad": 0.5,
-    "imagen": "T_Nebula01"
+    "imagen": "T_Galaxy01"
    },
    "flicker": {
     "hz": 0,
