@@ -1,0 +1,507 @@
+{
+ "id": "f21",
+ "titulo": "Focus 21: el puente",
+ "onda": "Onda III - Libertad",
+ "orden": 13,
+ "descripcion": "El borde del tiempo-espacio: señales de Focus 21 (beta de 16 Hz sobre 600-900 Hz, con theta de 4 Hz debajo). Se transita por los estados intermedios y se pide guía a 'quienes tienen sabiduría igual o mayor'. El domo se abre a la galaxia. Unos 45 minutos.",
+ "requiere": "f15",
+ "dormir": false,
+ "nocturna": false,
+ "duracion_total": 2527.17,
+ "segmentos": [
+  {
+   "nombre": "Prepárate",
+   "inicio": 0.0,
+   "duracion": 233.79,
+   "rampa": 12.0,
+   "voz": "f21/01_cd620ca5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": false
+   }
+  },
+  {
+   "nombre": "Focus 12",
+   "inicio": 233.79,
+   "duracion": 86.67,
+   "rampa": 30,
+   "voz": "f21/02_350a544b.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.2,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.35,
+    "complejidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hacia 21",
+   "inicio": 320.46,
+   "duracion": 273.9,
+   "rampa": 70,
+   "voz": "f21/03_8e22a96a.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 600,
+      "batido": 16.2,
+      "gain": 0.12
+     },
+     {
+      "portadora": 750,
+      "batido": 15.9,
+      "gain": 0.1
+     },
+     {
+      "portadora": 900,
+      "batido": 16.2,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.04
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.2,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.35,
+    "complejidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "El puente",
+   "inicio": 594.36,
+   "duracion": 662.54,
+   "rampa": 60,
+   "voz": "f21/04_af75bca9.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 600,
+      "batido": 16.2,
+      "gain": 0.12
+     },
+     {
+      "portadora": 750,
+      "batido": 15.9,
+      "gain": 0.1
+     },
+     {
+      "portadora": 900,
+      "batido": 16.2,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.04
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.5,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.3,
+    "velocidad": 0.06,
+    "complejidad": 0.5,
+    "imagen": "T_Galaxy01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Luz",
+   "inicio": 1256.9,
+   "duracion": 571.82,
+   "rampa": 40,
+   "voz": "f21/05_04582a8f.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 600,
+      "batido": 16.2,
+      "gain": 0.12
+     },
+     {
+      "portadora": 750,
+      "batido": 15.9,
+      "gain": 0.1
+     },
+     {
+      "portadora": 900,
+      "batido": 16.2,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.04
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.3,
+     0.6,
+     0.9
+    ],
+    "intensidad": 0.3,
+    "velocidad": 0.05,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula03"
+   },
+   "flicker": {
+    "hz": 7.83,
+    "profundidad": 0.3,
+    "forma": 0,
+    "color": [
+     0.85,
+     0.9,
+     1.0
+    ]
+   }
+  },
+  {
+   "nombre": "Silencio",
+   "inicio": 1828.72,
+   "duracion": 480,
+   "rampa": 60,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 600,
+      "batido": 16.2,
+      "gain": 0.12
+     },
+     {
+      "portadora": 750,
+      "batido": 15.9,
+      "gain": 0.1
+     },
+     {
+      "portadora": 900,
+      "batido": 16.2,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.04
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.5,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.3,
+    "velocidad": 0.06,
+    "complejidad": 0.5,
+    "imagen": "T_Galaxy01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Regresa",
+   "inicio": 2308.72,
+   "duracion": 101.6,
+   "rampa": 50,
+   "voz": "f21/07_ca8ce16f.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Afirmación de salud",
+   "inicio": 2410.32,
+   "duracion": 48.08,
+   "rampa": 12.0,
+   "voz": "f21/08_6c350210.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Retorno",
+   "inicio": 2458.4,
+   "duracion": 68.77,
+   "rampa": 8,
+   "voz": "f21/09_1635292a.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 308,
+      "batido": 14.0,
+      "gain": 0.22
+     },
+     {
+      "portadora": 500,
+      "batido": 15.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.06
+     }
+    ],
+    "rosa": 0.03
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.25,
+     0.35,
+     0.9
+    ],
+    "intensidad": 0.35,
+    "velocidad": 0.08,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,371 @@
+{
+ "id": "exploracion_sueno",
+ "titulo": "Exploración del sueño",
+ "onda": "Onda I - Descubrimiento",
+ "orden": 5,
+ "descripcion": "Para la noche: desde Focus 10 aprendes a 'salir rodando' del cuerpo, a flotar y a volver, y después el conteo del once al veinte te lleva a dormir de forma natural. El audio sigue el procesador de sueño de la patente de Monroe (theta, delta, delta profundo) y se desvanece sin despertarte. Déjalo correr: no hay retorno.",
+ "requiere": "",
+ "dormir": true,
+ "nocturna": false,
+ "duracion_total": 2466.32,
+ "segmentos": [
+  {
+   "nombre": "Prepárate",
+   "inicio": 0.0,
+   "duracion": 174.93,
+   "rampa": 6,
+   "voz": "exploracion_sueno/01_d0eef7a4.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Focus 10",
+   "inicio": 174.93,
+   "duracion": 86.47,
+   "rampa": 25,
+   "voz": "exploracion_sueno/02_683c0765.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.05,
+    "marron": 0.1,
+    "oceano": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Rueda",
+   "inicio": 261.4,
+   "duracion": 113.23,
+   "rampa": 12.0,
+   "voz": "exploracion_sueno/03_018433c8.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.05,
+    "marron": 0.1,
+    "oceano": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Flota",
+   "inicio": 374.63,
+   "duracion": 140.28,
+   "rampa": 12.0,
+   "voz": "exploracion_sueno/04_7ecfc4ca.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.05,
+    "marron": 0.1,
+    "oceano": 0.07
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hacia el sueño",
+   "inicio": 514.91,
+   "duracion": 271.41,
+   "rampa": 30,
+   "voz": "exploracion_sueno/05_09085b4a.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Theta",
+   "inicio": 786.32,
+   "duracion": 360,
+   "rampa": 60,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Delta",
+   "inicio": 1146.32,
+   "duracion": 600,
+   "rampa": 90,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 1.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 496,
+      "batido": 1.0,
+      "gain": 0.06
+     }
+    ],
+    "marron": 0.12,
+    "oceano": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Delta profundo",
+   "inicio": 1746.32,
+   "duracion": 600,
+   "rampa": 120,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 0.75,
+      "gain": 0.12
+     },
+     {
+      "portadora": 300,
+      "batido": 0.5,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.1,
+    "oceano": 0.04
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Silencio",
+   "inicio": 2346.32,
+   "duracion": 120,
+   "rampa": 120,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

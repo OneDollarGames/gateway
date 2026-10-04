@@ -1,0 +1,516 @@
+{
+ "id": "f15",
+ "titulo": "Focus 15: no-tiempo",
+ "onda": "Onda III - Libertad",
+ "orden": 12,
+ "descripcion": "Onda III. De Focus 12 a Focus 15, el estado sin tiempo: señales theta de 7 Hz sobre 500-750 Hz, silencio largo y un domo casi vacío. Monroe advierte que menos del 5 % lo alcanza en el primer intento: vuelve a esta sesión cuantas veces quieras. Unos 42 minutos.",
+ "requiere": "f12_intro",
+ "dormir": false,
+ "nocturna": false,
+ "duracion_total": 2434.29,
+ "segmentos": [
+  {
+   "nombre": "Prepárate",
+   "inicio": 0.0,
+   "duracion": 203.06,
+   "rampa": 12.0,
+   "voz": "f15/01_cd620ca5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": false
+   }
+  },
+  {
+   "nombre": "Focus 12",
+   "inicio": 203.06,
+   "duracion": 119.36,
+   "rampa": 30,
+   "voz": "f15/02_5dc0196b.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.2,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.35,
+    "complejidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hacia Focus 15",
+   "inicio": 322.42,
+   "duracion": 243.43,
+   "rampa": 60,
+   "voz": "f15/03_2d37ce0d.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 500,
+      "batido": 7.05,
+      "gain": 0.12
+     },
+     {
+      "portadora": 630,
+      "batido": 7.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 750,
+      "batido": 7.0,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "No-tiempo",
+   "inicio": 565.85,
+   "duracion": 726.7,
+   "rampa": 60,
+   "voz": "f15/04_7fcba8c0.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 500,
+      "batido": 7.05,
+      "gain": 0.12
+     },
+     {
+      "portadora": 630,
+      "batido": 7.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 750,
+      "batido": 7.0,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "El pasado",
+   "inicio": 1292.55,
+   "duracion": 516.72,
+   "rampa": 60,
+   "voz": "f15/05_b79c2012.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 500,
+      "batido": 7.05,
+      "gain": 0.12
+     },
+     {
+      "portadora": 630,
+      "batido": 7.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 750,
+      "batido": 7.0,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.05
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.2,
+     0.25,
+     0.7
+    ],
+    "intensidad": 0.22,
+    "velocidad": 0.04,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula02"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Silencio",
+   "inicio": 1809.27,
+   "duracion": 420,
+   "rampa": 60,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 500,
+      "batido": 7.05,
+      "gain": 0.12
+     },
+     {
+      "portadora": 630,
+      "batido": 7.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 750,
+      "batido": 7.0,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Regresa a 12",
+   "inicio": 2229.27,
+   "duracion": 85.46,
+   "rampa": 40,
+   "voz": "f15/07_9f9dbd94.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Afirmación de salud",
+   "inicio": 2314.73,
+   "duracion": 46.52,
+   "rampa": 12.0,
+   "voz": "f15/08_6c350210.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Retorno",
+   "inicio": 2361.24,
+   "duracion": 73.05,
+   "rampa": 8,
+   "voz": "f15/09_1635292a.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 308,
+      "batido": 14.0,
+      "gain": 0.22
+     },
+     {
+      "portadora": 500,
+      "batido": 15.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.06
+     }
+    ],
+    "rosa": 0.03
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.25,
+     0.35,
+     0.9
+    ],
+    "intensidad": 0.35,
+    "velocidad": 0.08,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

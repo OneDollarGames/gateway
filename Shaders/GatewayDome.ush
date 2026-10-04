@@ -1,0 +1,189 @@
+// Gateway: shader procedural del domo. Se incluye desde el nodo Custom de M_Dome
+// (ver Tools/setup_assets.py). Todo se calcula a partir de la direccion de vista `d`
+// y del vector frontal de la camara `fwd`, asi que el tunel y el orbe quedan siempre
+// centrados donde mira el usuario.
+#ifndef GATEWAY_DOME_USH
+#define GATEWAY_DOME_USH
+
+#define GW_PI 3.14159265
+#define GW_TAU 6.28318531
+
+float gw_hash21(float2 p)
+{
+	p = frac(p * float2(123.34, 456.21));
+	p += dot(p, p + 45.32);
+	return frac(p.x * p.y);
+}
+
+float gw_hash31(float3 p)
+{
+	p = frac(p * float3(443.897, 441.423, 437.195));
+	p += dot(p, p.yzx + 19.19);
+	return frac((p.x + p.y) * p.z);
+}
+
+float gw_vnoise(float2 p)
+{
+	float2 i = floor(p);
+	float2 f = frac(p);
+	f = f * f * (3.0 - 2.0 * f);
+	float a = gw_hash21(i);
+	float b = gw_hash21(i + float2(1.0, 0.0));
+	float c = gw_hash21(i + float2(0.0, 1.0));
+	float d = gw_hash21(i + float2(1.0, 1.0));
+	return lerp(lerp(a, b, f.x), lerp(c, d, f.x), f.y);
+}
+
+float gw_fbm(float2 p)
+{
+	float v = 0.0;
+	float a = 0.5;
+	[unroll]
+	for (int k = 0; k < 5; k++)
+	{
+		v += a * gw_vnoise(p);
+		p = p * 2.03 + 17.1;
+		a *= 0.5;
+	}
+	return v;
+}
+
+float3 gw_hsv(float h, float s, float v)
+{
+	float3 k = frac(h + float3(0.0, 2.0 / 3.0, 1.0 / 3.0));
+	float3 c = saturate(abs(k * 6.0 - 3.0) - 1.0);
+	return v * lerp(float3(1.0, 1.0, 1.0), c, s);
+}
+
+// Rotacion de matiz alrededor del eje gris (Rodrigues)
+float3 gw_hueshift(float3 c, float h)
+{
+	float a = h * GW_TAU;
+	float s = sin(a);
+	float co = cos(a);
+	float3 k = float3(0.57735, 0.57735, 0.57735);
+	return c * co + cross(k, c) * s + k * dot(k, c) * (1.0 - co);
+}
+
+// Imagen plana flotando delante del usuario, con mascara circular suave
+float3 gw_image(Texture2D img, SamplerState imgS, float2 p, float z, float scale, float2 drift)
+{
+	float2 uv = p * scale + 0.5 + drift;
+	float inFront = saturate(z * 3.0);
+	float mask = 1.0 - smoothstep(0.40, 0.5, length(uv - 0.5));
+	float2 edge = smoothstep(0.0, 0.08, uv) * smoothstep(0.0, 0.08, 1.0 - uv);
+	mask *= edge.x * edge.y;
+	return Texture2DSample(img, imgS, uv).rgb * inFront * mask;
+}
+
+float3 gw_mode(int mode, float3 d, float z, float2 p, float ang, float rr, float3 color, float intensity, float speed, float complexity, float hue, float breath, float t, Texture2D img, SamplerState imgS)
+{
+	float3 c = float3(0.0, 0.0, 0.0);
+	color = gw_hueshift(color, hue);
+	float front = saturate(z * 2.0 + 0.2);
+
+	if (mode == 0) // Ganzfeld: campo homogeneo, apenas vivo
+	{
+		float n = gw_fbm(d.xy * 1.2 + t * 0.02 * speed) * 0.5 + gw_fbm(d.zy * 1.7 - t * 0.015 * speed) * 0.5;
+		c = color * (0.92 + 0.08 * n);
+	}
+	else if (mode == 1) // Orbe REBAL: esfera de energia que respira, flujo en espiral
+	{
+		float rad = 0.24 + 0.12 * breath;
+		float core = exp(-pow(rr / rad, 2.0) * 3.0);
+		float shell = exp(-pow((rr - rad * 1.35) / (0.07 + 0.05 * breath), 2.0));
+		float spiral = 0.5 + 0.5 * sin(ang * 3.0 + rr * 14.0 - t * speed * 2.5);
+		float field = 0.5 + 0.5 * sin(rr * 6.0 - t * speed * 0.8 + ang);
+		c = color * (core * 1.3 + shell * 0.9 * spiral + 0.07 * field) + float3(0.9, 0.95, 1.0) * core * 0.35;
+		c *= front;
+	}
+	else if (mode == 2) // Tunel / vortice
+	{
+		float depth = 1.0 / (rr + 0.08);
+		float rings = 0.5 + 0.5 * sin(depth * (4.0 + 10.0 * complexity) - t * speed * 6.0);
+		float nSpokes = 6.0 + floor(complexity * 10.0);
+		float spokes = 0.5 + 0.5 * sin(ang * nSpokes + depth * 2.0 - t * speed * 0.7);
+		float glow = 1.0 / (1.0 + rr * rr * 4.0);
+		float3 hueC = gw_hueshift(color, depth * 0.03);
+		c = hueC * (rings * 0.7 + spokes * 0.3) * (0.3 + glow * 1.5);
+		c += float3(1.0, 1.0, 1.0) * exp(-rr * 8.0) * 0.8;
+		c *= (0.6 + smoothstep(0.0, 0.05, rr)) * front;
+	}
+	else if (mode == 3) // Mandala caleidoscopico
+	{
+		float n = 5.0 + floor(complexity * 9.0);
+		float sector = GW_TAU / n;
+		float a = abs(frac(ang / sector + 0.5) - 0.5) * sector;
+		float2 q = float2(cos(a), sin(a)) * rr;
+		float v1 = gw_fbm(q * 3.0 + t * speed * 0.2);
+		float v2 = gw_fbm(q * 7.0 - t * speed * 0.15 + v1);
+		float v = v1 * 0.6 + v2 * 0.4;
+		float petals = 0.5 + 0.5 * sin(rr * 18.0 * (0.5 + complexity) - t * speed * 2.0 + v * 6.0);
+		c = gw_hsv(frac(hue + v * 0.7 + rr * 0.1), 0.75, pow(saturate(v * 1.3), 1.6)) * (0.5 + petals);
+		c = lerp(c, color * v * 1.5, 0.35);
+		c *= 1.4 / (1.0 + rr * 1.5) * front;
+	}
+	else if (mode == 4) // Cosmos: estrellas + nebulosa (imagen)
+	{
+		float3 g = d * 90.0;
+		float3 cell = floor(g);
+		float h = gw_hash31(cell);
+		float3 jitter = float3(gw_hash31(cell + 1.3), gw_hash31(cell + 2.7), gw_hash31(cell + 5.1)) - 0.5;
+		float3 fp = frac(g) - 0.5 - jitter * 0.8;
+		float twinkle = 0.6 + 0.4 * sin(t * (1.0 + h * 4.0) * (0.5 + speed) + h * 20.0);
+		float star = pow(saturate(1.0 - length(fp) * 2.4), 6.0) * step(0.93, h) * twinkle;
+		float2 drift = float2(sin(t * speed * 0.11), cos(t * speed * 0.07)) * 0.03;
+		float3 neb = gw_image(img, imgS, p, z, 0.9 - 0.15 * sin(t * speed * 0.2), drift);
+		float3 procNeb = color * gw_fbm(d.xy * 2.5 + t * speed * 0.05) * 0.5 * gw_fbm(d.zx * 3.0 + 7.0);
+		c = neb * 1.2 + procNeb + star * float3(0.9, 0.95, 1.0);
+	}
+	else if (mode == 5) // Vacio: oscuridad con chispas lejanas (dormir)
+	{
+		float3 g = d * 40.0;
+		float3 cell = floor(g);
+		float h = gw_hash31(cell);
+		float3 fp = frac(g) - 0.5;
+		float spark = pow(saturate(1.0 - length(fp) * 2.6), 8.0) * step(0.985, h) * (0.5 + 0.5 * sin(t * 0.7 + h * 30.0));
+		c = color * 0.02 + spark * color * 0.6;
+	}
+	else // 6 Caja de conversion de energia: imagen + pulso de luz
+	{
+		float3 pic = gw_image(img, imgS, p, z, 0.8, float2(0.0, 0.0));
+		float pulse = 0.6 + 0.4 * sin(t * speed * 3.0);
+		float glow = exp(-rr * rr * 2.0) * pulse;
+		c = pic * (0.8 + 0.4 * pulse) + color * glow * 0.6;
+	}
+	return c * intensity;
+}
+
+float3 GatewayDome(float3 dir, float3 fwd, float modeA, float modeB, float mixAB, float3 color, float intensity, float speed, float complexity, float hue, float breath, float t,
+	float guide, Texture2D imgA, SamplerState imgAS, Texture2D imgB, SamplerState imgBS)
+{
+	float3 d = normalize(dir);
+	float3 f = normalize(fwd);
+	float3 right = normalize(cross(float3(0.0, 0.0, 1.0), f));
+	float3 up = cross(f, right);
+	float z = dot(d, f);
+	float2 p = float2(dot(d, right), dot(d, up));
+	float ang = atan2(p.y, p.x);
+	float rr = length(p) / max(z, 0.03);
+
+	float3 a = gw_mode((int)(modeA + 0.5), d, z, p, ang, rr, color, intensity, speed, complexity, hue, breath, t, imgA, imgAS);
+	float3 c = a;
+	if (mixAB >= 0.001)
+	{
+		float3 b = gw_mode((int)(modeB + 0.5), d, z, p, ang, rr, color, intensity, speed, complexity, hue, breath, t, imgB, imgBS);
+		c = lerp(a, b, mixAB);
+	}
+	// Guia de respiracion (VR): aro que crece al inhalar y se encoge al exhalar, delante de la mirada
+	if (guide > 0.001 && z > 0.0)
+	{
+		float R = 0.09 + 0.06 * breath;
+		float ring = exp(-pow((rr - R) / 0.005, 2.0));
+		float fixedRing = exp(-pow((rr - 0.16) / 0.003, 2.0)) * 0.25;
+		c += (ring * 0.9 + fixedRing) * guide * float3(0.85, 0.92, 1.0);
+	}
+	return c;
+}
+
+#endif

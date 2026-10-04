@@ -1,0 +1,181 @@
+
+Description
+CROSS-REFERENCE TO RELATED APPLICATION
+The present application is related to copending application No. 07/514,460, filed Apr. 16, 1990 now U.S. Pat. No. 5,213,562.
+BACKGROUND OF THE INVENTION
+1. Field of the Invention
+The present invention relates to an improved method of inducing desired states of consciousness, including different levels of sleep, in human beings, using a technique known as frequency following response (FFR), developed by the present inventor. The invention also relates to apparatus for performing the method. A number of areas of applicability of the invention are described, in accordance with different preferred embodiments.
+2. Description of the Background Art
+In a prior patent, U.S. Pat. No. 3,884,218, the present inventor described a method of inducing different levels of sleep, using the FFR technique, in which brain waves could be made to follow superimposed frequency patterns. These frequency patterns were provided as sine waves, at frequencies known to correspond to different levels of sleep, such as alpha (exhibiting brain wave activity in the range of 8-12 Hz), theta (6-8 Hz), and delta (1-4 Hz). EEGs exhibiting frequencies between 12 and 30 Hz (known as a beta range) are characteristic of awake individuals, though beta activity at even higher frequencies has been observed in different types of mental activities. Gamma activity has been characterized as all activity above 30 Hz; until recently, it has not been possible to monitor brain activity in the gamma range. (It should be noted that the boundaries between gamma and beta, beta and alpha, alpha and theta, and theta and delta are somewhat arbitrary; the foregoing delineations are intended to be exemplary and not limiting.)
+The present inventor discovered that the human brain could be entrained to output brain wave patterns these different frequencies. While frequencies corresponding to these different levels of sleep are not audible, by superimposing those frequencies on some type of sound, such as music, it was determined to be possible to induce desired levels of sleep. The individual listening to the music would "hear" the low frequencies, with the desired effect on brain activity.
+An improvement on the inventor's patented technique, to induce varied states of alertness, is the subject of copending Application No. 07/514,460, the contents of which are hereby incorporated herein by reference. This copending application describes a general FFR technique using what is known as a binaural beat phenomenon, details of which are provided in that application. Briefly, a binaural beat is produced by sending signals at different frequencies (some Hz apart, depending on the desired effect) to an individual's left and right ears. The difference between the frequencies defines the frequency of the binaural beat. Using this technique, the desired frequency can be introduced into the individual's brain activity, inducing the desired state of consciousness.
+The induction of FFR in the human brain in this manner results in the synchronization of activity in the hemispheres of the brain. FIG. 1A shows brain activity without FFR, and FIG. 1B shows brain activity with FFR. The inventor has coined the term HEMI-SYNC (for Hemisphere Synchronization) to describe this phenomenon.
+The copending application describes a technique wherein, in one form, sine waves having a frequency corresponding to a consciousness state are superimposed on two different carrier frequencies to form two different signals to set up the binaural beat. In another form, an actual brain pattern, based on an electroencephalogram (EEG) waveform indicative of that consciousness state is superimposed on the different carrier frequencies to form two different signals. In use, each signal is provided to one ear of a subject. The difference in carrier frequencies sets up the binaural beat.
+Another, more limited application of the binaural beat phenomenon is found in U.S. Pat. No. 4,834,701. In contrast to the narrow range of frequencies discussed in that patent, in the above-mentioned copending application, the applicability of the binaural beat phenomenon is investigated over a much wider range of frequencies, spanning the spectrum of brain activity.
+Through additional investigation involving mapping of brain activities of different individuals, the present inventor has discovered some significance to the fact that, while brain waves at certain frequencies are characteristic of different levels of sleep, brain patterns of different individuals still vary. The inventor has investigated possible enhancements to the FFR effect by making it more generic among individuals, yet still more specific to brain activity than a simple sine wave, or an EEG of a particular individual.
+Another area of investigation being performed by the present inventor relates to human sleep patterns. Based on current knowledge of human sleep patterns, it appears that sleep is composed of a series of 90-minute cycles. As stated earlier, the beta stage is one of alertness. The first sleep state is alpha, or mental and physical relaxation. The second is theta, or light sleep. Next is delta, or deep sleep. The inventor has investigated the possibility of providing FFR waveforms in cyclic patterns, replicating these human sleep patterns, to facilitate sleep. Another possibility is to take advantage of the cyclic nature of sleep patterns to provide a more gentle wake-up for a sleeper.
+In considering the need for alertness during activities such as work, the inventor also considered how it might be possible to introduce FFR waveforms into ambient noise in one's surroundings to facilitate maintenance of desired states of consciousness. Particularly in environments such as factories, or in offices where office equipment puts out consistent types of noise, it would be desirable to be able to introduce a binaural beat into that noise at different frequencies, to enhance the degree of alertness of factory or office workers as desired.
+SUMMARY OF THE INVENTION
+In view of the foregoing, according to one aspect of the invention, EEGs for a number of individuals in different states of consciousness are sampled, and EEG waveforms for the group of individuals, corresponding to each identifiable state of consciousness, are combined. A binaural beat then is generated using the combined EEGs.
+According to this aspect of the invention, it has been determined that using groups of EEG waveforms from different individuals and combining them to obtain a representative waveform yields a waveform that a person's brain is more likely to replicate than an individual EEG waveform, or a sine wave representation of the EEG waveform. The combination may be simple averaging, though other combination techniques, such as weighted averaging, for combining different numbers of EEG waveforms as desired, are contemplated. Now that the inventor has discovered that combinations of EEG waveforms provide a particularly effective entrainment environment, it will be seen that various ways of combining these waveforms may yield greater or lesser effects.
+In accordance with another aspect of the invention, a method for replicating cyclic sleep patterns for a desired sleep period is provided. In a preferred embodiment according to this aspect of the invention, a subject is led from beta, to alpha, to theta, to delta, then back to theta, then alpha, then a rapid-eye movement (REM) or light dreaming sleep, in a sequence of 90-minute cycles, during a sleep period of desired duration. After the expiration of the period, the subject may wake up voluntarily. Alternatively, the invention can provide a gentle external stimulus to lead the subject to a beta state.
+With respect to this aspect of the invention, an apparatus is provided which automatically leads an individual through these cyclic sleep patterns, and enables the individual to set a desired sleep period. This device preferably takes advantage of the techniques to be described relative to the first-mentioned aspect of the invention, but is not so limited. The inventive contributions of this second aspect of the invention are considered to lie in the combination of hardware itself which generates the desired sequence of binaural beats, as opposed to the particular software which determines the nature of those binaural beats. In one form, the invention is constituted by an alarm clock which provides a fade-in theta-alpha signal followed by a strong beta-gamma signal shortly before a desired wake-up time.
+According to yet another embodiment of the invention, selectable mind-affecting sound patterns are provided to supplement constant ambient noise in any environment. When the noise is not present, the patterns are not provided. The patterns vary in amplitude in accordance with changes in the environmental noise.
+In accordance with still another embodiment of the invention, a portable system is provided to enable the wearer to introduce binaural beat signals of frequencies that are selectable in accordance with a desired level of awareness. Depending on the level of sophistication of the device, the binaural beat may be generated using the combined EEG waveforms of the first aspect of the invention, but this last aspect of the invention is not so limited.
+BRIEF DESCRIPTION OF THE DRAWINGS
+The foregoing and other aspects of the invention will be understood by those of working skill in this technological field by reference to the following detailed description of the preferred embodiments of the invention, read in conjunction with the accompanying drawings, wherein:
+FIGS. 1A-1C and 1D-1F taken from the above-mentioned copending application, show one example of the results which can be achieved using the inventive techniques;
+FIG. 2 is a block diagram of the hardware according to a second embodiment of the invention, and FIGS. 3-5 are more detailed schematics therefor;
+FIGS. 6A-6J are drawings, similar to FIGS. 1A and 1B, but showing brain activity during various stages of a sleep cycle, using a technique in accordance with the second embodiment of the invention;
+FIG. 7 is a block diagram of hardware in accordance with a third embodiment of the invention;
+FIG. 8A is a block diagram of hardware in accordance with a fourth embodiment of the invention, and FIG. 8B a schematic of that hardware; and
+FIGS. 9A-9M are graphs of different possible effects of the embodiment of FIGS. 8A and 8B, showing a baseline brain pattern, selected stimulus frequencies and corresponding stimulus waves, and associated response waves.
+DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+The method according to a first preferred embodiment of the invention, which has been developed through extensive experimentation, derives from the empirically-observed phenomenon that brain patterns of human subjects are entrained more readily to brain patterns which more closely match their own. In prior implementations of the FFR technique, such as in the inventor's prior patent, in which sine waves having frequencies corresponding to desired levels of sleep were superimposed upon a given frequency, entrainment did occur. Use of the binaural beat phenomenon yielded better results, through synchronization of the hemispheres of the brain.
+However, simple repetitive frequencies, or even combinations of such frequencies within different ranges, do not represent brain patterns per se, but rather provide entrainment environments for the brain to follow. It has been determined that, the more closely the entrainment environment parallels normal brain function at different levels of consciousness, the more effective the entrainment effect. This phenomenon is what led to the improvement disclosed in the above-mentioned copending application.
+As a further improvement on that technique, as mentioned above, the present inventor investigated the possibility of creating more generic models of brain function at different levels of consciousness. As a result of that investigation, it was determined that combinations of EEG waveforms from different individuals functioning at the same identifiable level of consciousness (e.g. alpha sleep, theta sleep, or delta sleep) provided a superior entrainment environment. In the inventive method according to this aspect of the invention, the brain patterns of 40 to 50 individuals were combined to yield the entrainment environment.
+One area of applicability of the techniques of the present invention is in the area of sleep therapy. Many individuals suffer from sleep disorders to varying degrees. It is possible to provide a suitable entrainment environment, based on known sleep cycles prevalent in humans, to help individuals to regulate their sleep patterns, and thus help to solve their sleep disorders. One embodiment of the invention, shown in FIG. 2 and also in FIGS. 3-5, implements the inventive techniques in what the inventor calls a Sleep Processor to aid in the regulation of human sleep cycles.
+In FIG. 2, a read-only memory (ROM) 10 stores frequency sequences corresponding to different parts of a human sleep cycle. The stored frequency sequences may be in accordance with a predetermined algorithm, or alternatively may provide a less complex entrainment environment, such as simple averaging. A digital signal processor (DSP) 20 selects different ones of these sequences based on the current time and the time to which an alarm is set. The time is displayed on 
+display
+ 30, and is set using time set 40. The alarm is set to a desired wake-up time using alarm set 50.
+During operation, the 
+DSP
+ 20 accesses the 
+ROM
+ 10 and provides an output to a pulse code modulator unit (PCM) 60 accordingly. The 
+PCM
+ 60 provides an output to each of left and 
+right channel speakers
+ 70, 80 which are provided in close proximity to the ears of a human subject. Using headphones enhances the effect.
+Some additional detail of operation of the 
+DSP
+ 20 in one aspect of this embodiment now will be provided. A serial port in the 
+DSP
+ 20 generates an interrupt at a 50 KHz rate. An interrupt handler in the 
+DSP
+ 20 computes the various sounds, in one form, by generating sine waves using a pair of integrators:
+cosine=cosine+frequency×sine
+sine=sine-frequency×cosine
+The Sleep Processors needs ten frequencies, five for each channel, and all of these frequencies are generated at the same time. The results are multiplied by ten envelopes, most of which are zero at any moment.
+Noise is generated by a well-known 16-bit shift-register algorithm. This algorithm generates a noise signal that repeats every 65535 samples, or about every five seconds. The noise is filtered to sound more like pink or red noise, and less like white noise, and is written into a delay line in RAM. For each channel, the filtered noise is averaged with an earlier sample from the delay line, thus imparting a comb filter response to it.
+An additional low-frequency sine/cosine pair is generated, to sweep the comb filter delay. 32-bit arithmetic is used here. The approximate sweep rate is about 1/8 Hz. The low-frequency sine wave is used directly to sweep the delay on one channel. The delay on the other channel is controlled by some mix of the sine and cosine waves. By choosing these and other coefficients properly, any phase and amplitude relationship between the left and right sweep can be obtained. The comb filtered noise for each channel is multiplied by a noise envelope value.
+The device is operated as follows. A desired wake-up time is set, much like an alarm clock, and the desired volume is selected. A start/stop button then is pressed to start the cycles for the selected sleep period. Throughout the sleep period, the device repeats a 90 minute cycle of sound that leads the subject through alpha, theta, delta, and back to dreaming sleep. Five minutes before the scheduled wake-up time, a beta signal is introduced to bring the subject back to complete physical wakefulness. When the subject wakes up, he/she hits the start/stop button again to stop the sound sequence.
+The sounds produced by the 
+DSP
+ 20 include binaural beat carrier sound patterns utilizing both amplitude and frequency modulation, masking pink sound (a known type of sound described in the copending application), and, optionally, occasional single-word voiced affirmations. The binaural beat audio signals may be in the form of appropriate sine waves, or alternatively may be replicas of actual EEG brain waveforms. In the latter case, either the just-described combined EEG waveforms or a single EEG waveform (as described in the copending application) may be used. The entire pattern of sound and control is generated algorithmically.
+One aspect of the effectiveness of the device of FIGS. 2-5 is the spacing of sound carriers at related frequencies so as to engender binaural beat signals not only from channel to channel, but also monaurally, in each audio channel. In this preferred embodiment, three binaural beat frequency signals are created between audio carrier channels, and two amplitude beats per channel also are created, yielding a total of seven beat signals. The inventor has coined the term Septon for this set of beat signals. One example of a septon is as follows:
+______________________________________                                    
+Left Channel              Right Channel                                   
+______________________________________                                    
+200 Hz carrier                                                            
+            (4 Hz binaural beat)                                          
+                          204 Hz carrier                                  
+(4 Hz monaural            (4 Hz monaural beat)                            
+beat)                                                                     
+204 Hz carrier                                                            
+            (4 Hz binaural beat)                                          
+                          208 Hz carrier                                  
+(4 Hz monaural            (4 Hz monaural beat)                            
+beat)                                                                     
+208 Hz carrier                                                            
+            (4 Hz binaural beat)                                          
+                          212 Hz carrier                                  
+______________________________________                                    
+A standard program according to this preferred embodiment would employ the following sound sequence:
+0-5 minutes:
+Signal Group A (comprised of replicated EEG waveforms having dominant values in the alpha range)
+Signal Group B (15 dB below Group A, generated simultaneously with the sounds of Group A, and comprised of replicated EEG waveforms having dominant values in the theta range)
+Phased Pink Sound (six seconds, peak-to-peak, on both left and right channels, 20 dB below Group A)
+Voice Inserts (repeated at 40 second intervals, 10 dB below Group A, simultaneously with the other sounds, and comprising short sequences of phrases like "relax" "let go", and "sleep")
+5-20 minutes:
+Signal Group B
+Signal Group C (20 dB below Group B, generated simultaneously with Group B, and comprised of replicated EEG waveforms having dominant values in the delta range)
+Phased Pink Sound (15 dB below Group B, having a duration as in the first interval)
+Voice Inserts (10 dB below Group B, comprised as above)
+20-40 minutes:
+Signal Group C
+Signal Group D (10 dB below Group C, generated simultaneously with Group C, and comprised of replicated EEG waveforms having dominant values in the lower delta range)
+Phased Pink Sound (10 dB below Group C, having a duration as in the first interval)
+Voice Inserts (20 dB below Group C, comprised as above) 40-65 minutes:
+Signal Group D
+Phased Pink Sound (10 dB below Group D, having a duration as in the first interval)
+Voice Inserts (20 dB below Group D, comprised as above) 65-80 minutes:
+Signal Group C
+Signal Group D (10 dB below Group C, generated simultaneously with Group C)
+Phased Pink Sound (15 dB below Group C, having a duration as in the first interval)
+NO voice inserts
+80-90 minutes:
+Signal Group B
+Signal Group C (10 dB below B, generated simultaneously with Group B)
+Phased Pink Sound (15 dB below Group B, having a duration as in the first interval)
+NO voice inserts
+The foregoing sequence is repeated through the sleep period until the wakeup sequence, approximately five minutes before the set wake-up time:
+Signal Group AA (a wakeup sequence, comprising replicated EEG waveforms having dominant values in the beta range, or alternatively a 400 Hz/416 Hz envelope yielding frequencies in the beta range)
+Voice inserts (10 dB below Group AA, comprised of short phrases such as "waking up", "refreshed", "bright", and repeated at intervals)
+One variation of the foregoing embodiment is an alarm clock which, instead of sounding a loud alarm or other jarring noise at wake-up time, starts a gentle sequence of signals some minutes before, to bring an individual up gently through the various levels of sleep to full wakefulness. A fade-in theta-alpha signal may be provided, followed by a stronger beta-gamma signal.
+FIGS. 6A to 6J show the effects of the just-described "sleep processor" embodiment. 
+Column
+ 1 shows distribution of delta frequencies; 
+column
+ 2 shows distribution of theta frequencies; and 
+column
+ 3 shows distribution of alpha frequencies. The top row of graphs is the actual pattern observed in the individual, and the bottom row is the baseline pattern.
+FIG. 6A corresponds to a normal waking state. Dominant alpha activity is shown in the occipital area of the brain. In FIG. 6B, pink noise has been applied, without any beat frequencies. A narrower focus of waking state is shown.
+In FIG. 6C, a signal sequence corresponding to Signal Group A has been applied. Some gain in theta frequencies are seen, with rapid diffusion of alpha frequencies and movement toward the vertex of the head. In FIG. 6D, a signal sequence corresponding to Signal Group B has been applied. There is further diffusion of alpha frequencies, with some movement of delta and theta activity toward the pre-frontal cortex of the brain.
+In FIG. 6E, a signal sequence corresponding to Signal Group C has been applied. There is rapid diffusion of alpha frequencies, and increased power of theta and delta frequencies. In FIG. 6F, a signal sequence corresponding to Signal Group D has been applied. Alpha frequencies are diffused further toward the pre-frontal cortex, and there is a marked increase in theta and delta frequencies.
+FIG. 6G, continuing application of Signal Group D frequencies, shows a marked increase in delta activity in the pre-frontal cortex, with a steady decrease in alpha activity at the vertex. In FIG. 6H, another binaural beat stimulation has been applied, and characteristics of 
+stage
+ 3 and 4 sleep may be observed. In FIG. 6I, further evidence of the further binaural beat stimulation is observed. Delta is the dominant frequency here. Alpha and theta activity has moved to the prefrontal cortex. Finally, FIG. 6J shows early awakening activity, with a diffusion of delta activity.
+FIG. 7 is a block diagram of hardware in accordance with another embodiment of the invention, having application to the work environment, or anywhere a constant source of noise is present, to allow workers, for example, to maintain a desired state of awareness. The device may contain suitable digital signal processor circuitry, as in the preceding embodiment. One difference is that the operation of the device is keyed to the presence of ambient noise, not to a given time duration or selected sleep period.
+The device of FIG. 7 includes a 
+sound generator
+ 200 which, as just mentioned, may comprise a digital signal processor. The 
+generator
+ 200 outputs sound patterns via one or more speakers (left and 
+right channel speakers
+ 210, 220 are shown). A 
+sound level detector
+ 230 detects the level of ambient noise in the room, and provides a signal to the 
+sound generator
+ 200, or activates a cut-off switch (not shown), to discontinue output of the 
+sound generator
+ 200 when the ambient noise level drops below a predetermined level.
+The sound level detector also preferably provides a signal to the 
+sound generator
+ 200 to boost the sound pattern output when the ambient noise level increases, so that the effect of the provision of the sound pattern is commensurate with the noise level in the room. Alternatively, the user may simply adjust the volume manually, using one or more knobs (not shown) on the 
+sound generator
+ 200.
+A 
+timer
+ 240 may be provided to control the duration of provision of the selected sound pattern, or even to change the sound pattern at different times of day by controlling a 
+selector
+ 250 which the user accesses to select a particular sound pattern to be output. The user may select a given sound pattern in the morning, and the 
+timer
+ 240 may change that pattern automatically, based on a need at different times of day for sound patterns providing different states of alertness.
+The sound pattern produced by the device of FIG. 7 varies automatically in amplitude in accordance with changes in the ambient noise, and is discontinued when the noise stops. As a result, the sound remains unobtrusive. Depending on the setting, the produced sound pattern can enhance wakefulness, promote relaxation (as, for example, in rest areas in the workplace), reduce anxiety and stress, or focus attention, among other characteristics.
+The basic system of FIG. 7 produces and inserts four different sound patterns which are selected manually so as to merge the output into the constant ambient noise. More sound patterns are possible, depending on the desired overall capabilities of the system. Various modifications are possible. For example, a programmable version may be provided, which changes the form of the sound patterns throughout a work day or night, in accordance with the responses desired.
+Selectability of patterns may be accomplished differently in a model intended for use in conjunction with a computer system. The computer operator can input a selection, and may vary that selection as desired throughout the work day.
+FIG. 8A is a diagram of a portable embodiment of the invention, for use in providing a desired level of consciousness on an individualized basis. A 
+signal generator
+ 300 preferably includes a 
+digital signal processor
+ 310 and a 
+ROM
+ 320 for storing predetermined signals or sequences of signals which correspond to various desired states of awareness. The 
+signal generator
+ 300 may be a simple tone generator or pair of tone generators which provide outputs to speakers or headphones 330 (such as button-sized headphones) to set up a binaural beat. Output of pink sound or phased pink sound by the 
+generator
+ 300 is desirable to facilitate defocusing of the listener and consequent ability to concentrate on the sounds being produced. A 
+selector
+ 340 enables a user to instruct the 
+signal generator
+ 300 to output signals corresponding to the level of consciousness (e.g. focused concentration, relaxation, alertness) that a user desires.
+FIG. 8B shows a schematic of this embodiment, which the inventor calls a "Mood Minder". This embodiment includes a selector for selecting one of four possible types of signals, corresponding to four respective levels of awareness: awake and alert; concentration; attention; and relaxation. However, the invention is not so limited, as the 
+generator
+ 300 may be capable of producing other possible types of signals. Alternatively, pre-set patterns in the 
+generator
+ 300 may vary when specialized use is required. The key to this embodiment is its portability, enabling the user to carry the device everywhere. The device is battery-operated, and is small enough to fit in an upper coat pocket, for example.
+FIGS. 9A-9M show examples of prestored patterns produced by the 
+generator
+ 300, and of results achieved in use. FIG. 9A shows baseline brain waves, with relative power output shown at the right for different frequencies. FIGS. 9B, 9E, 9H, and 9K show the stimulus frequencies produced for four different respective states of consciousness. FIGS. 9C, 9F, 9I, and 9L show the stimulus waves corresponding to the superposition of the stimulus frequencies on the baseline wave. FIGS. 9D, 9G, 9J, and 9M show the results achieved in use. As can be seen, the peak-to-peak amplitudes for the response brain waves correspond closely to those of the stimulus waves.
+While the present invention has been described in detail with reference to preferred embodiments, various modifications within the scope and spirit of the invention will be apparent to those of working skill in this technological field. Consequently, the invention should be considered as limited only by the scope of the appended claims.

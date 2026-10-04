@@ -1,0 +1,828 @@
+{
+ "id": "incubacion",
+ "titulo": "Incubación de sueños",
+ "onda": "Sueño lúcido",
+ "orden": 16,
+ "descripcion": "Dormio Light (MIT, 2024): tras un yoga nidra breve, cuatro ciclos de ventana de sueño ligero → frase de incubación → despertar suave con una pregunta → recuperación. El 91 % de los participantes incorporó el tema en sus imágenes hipnagógicas. Di tus reportes en voz alta o grábalos. Unos 85 minutos; termina dormido.",
+ "requiere": "",
+ "dormir": true,
+ "nocturna": false,
+ "duracion_total": 5579.54,
+ "segmentos": [
+  {
+   "nombre": "Elige un tema",
+   "inicio": 0.0,
+   "duracion": 40.56,
+   "rampa": 6,
+   "voz": "incubacion/01_8f68a474.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Yoga nidra",
+   "inicio": 40.56,
+   "duracion": 344.77,
+   "rampa": 20,
+   "voz": "incubacion/02_501aad27.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 5.0,
+    "inhalar": 0.4,
+    "guia": false
+   }
+  },
+  {
+   "nombre": "Ventana 1",
+   "inicio": 385.33,
+   "duracion": 420,
+   "rampa": 40,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Incuba 1",
+   "inicio": 805.33,
+   "duracion": 187.61,
+   "rampa": 5,
+   "voz": "incubacion/04_bfebb31a.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Despierta 1",
+   "inicio": 992.93,
+   "duracion": 68.57,
+   "rampa": 5,
+   "voz": "incubacion/05_aeb5bab5.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2
+  },
+  {
+   "nombre": "Recupera 1",
+   "inicio": 1061.5,
+   "duracion": 424.03,
+   "rampa": 20,
+   "voz": "incubacion/06_dabb0511.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Ventana 2",
+   "inicio": 1485.53,
+   "duracion": 420,
+   "rampa": 40,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Incuba 2",
+   "inicio": 1905.53,
+   "duracion": 189.04,
+   "rampa": 5,
+   "voz": "incubacion/08_bfebb31a.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Despierta 2",
+   "inicio": 2094.57,
+   "duracion": 69.88,
+   "rampa": 5,
+   "voz": "incubacion/09_aeb5bab5.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2
+  },
+  {
+   "nombre": "Recupera 2",
+   "inicio": 2164.45,
+   "duracion": 424.43,
+   "rampa": 20,
+   "voz": "incubacion/10_dabb0511.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Ventana 3",
+   "inicio": 2588.88,
+   "duracion": 420,
+   "rampa": 40,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Incuba 3",
+   "inicio": 3008.88,
+   "duracion": 188.05,
+   "rampa": 5,
+   "voz": "incubacion/12_bfebb31a.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Despierta 3",
+   "inicio": 3196.94,
+   "duracion": 69.48,
+   "rampa": 5,
+   "voz": "incubacion/13_aeb5bab5.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2
+  },
+  {
+   "nombre": "Recupera 3",
+   "inicio": 3266.42,
+   "duracion": 424.31,
+   "rampa": 20,
+   "voz": "incubacion/14_dabb0511.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Ventana 4",
+   "inicio": 3690.73,
+   "duracion": 420,
+   "rampa": 40,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Incuba 4",
+   "inicio": 4110.73,
+   "duracion": 188.74,
+   "rampa": 5,
+   "voz": "incubacion/16_bfebb31a.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Despierta 4",
+   "inicio": 4299.47,
+   "duracion": 68.23,
+   "rampa": 5,
+   "voz": "incubacion/17_aeb5bab5.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2
+  },
+  {
+   "nombre": "Recupera 4",
+   "inicio": 4367.7,
+   "duracion": 425.2,
+   "rampa": 20,
+   "voz": "incubacion/18_dabb0511.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Duerme",
+   "inicio": 4792.9,
+   "duracion": 66.64,
+   "rampa": 30,
+   "voz": "incubacion/19_4b183959.wav",
+   "voz_gain": 0.35,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 1.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 496,
+      "batido": 1.0,
+      "gain": 0.06
+     }
+    ],
+    "marron": 0.12,
+    "oceano": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Delta",
+   "inicio": 4859.54,
+   "duracion": 600,
+   "rampa": 120,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 1.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 496,
+      "batido": 1.0,
+      "gain": 0.06
+     }
+    ],
+    "marron": 0.12,
+    "oceano": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Silencio",
+   "inicio": 5459.54,
+   "duracion": 120,
+   "rampa": 120,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

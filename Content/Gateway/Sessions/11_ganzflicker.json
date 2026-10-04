@@ -1,0 +1,307 @@
+{
+ "id": "ganzflicker",
+ "titulo": "Luz: Ganzflicker",
+ "onda": "Laboratorio",
+ "orden": 11,
+ "descripcion": "Sesión científica (Bartossek 2021, Amaya 2023, Reeder 2022): luz intermitente a 10 Hz sobre los párpados cerrados durante 15 minutos, con batido alfa de 10 Hz y ruido rosa. El 70-90 % de las personas ve geometrías, colores y movimiento; muchas, escenas. Requiere el consentimiento de flicker y no debe usarse con epilepsia o migraña con aura. Unos 25 minutos.",
+ "requiere": "",
+ "dormir": false,
+ "nocturna": false,
+ "duracion_total": 1276.03,
+ "segmentos": [
+  {
+   "nombre": "Oscuridad",
+   "inicio": 0.0,
+   "duracion": 122.21,
+   "rampa": 6,
+   "voz": "ganzflicker/01_c173758a.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.14,
+      "iso": 0.2
+     }
+    ],
+    "rosa": 0.06,
+    "tono_respiracion": 0.5
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": false
+   }
+  },
+  {
+   "nombre": "Rampa",
+   "inicio": 122.21,
+   "duracion": 68.52,
+   "rampa": 60,
+   "voz": "ganzflicker/02_be028f57.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 10.0,
+      "gain": 0.24,
+      "iso": 0.5
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 10.0,
+    "profundidad": 0.25,
+    "forma": 1,
+    "color": [
+     1.0,
+     0.9,
+     0.75
+    ]
+   }
+  },
+  {
+   "nombre": "Flicker 10 Hz",
+   "inicio": 190.73,
+   "duracion": 300,
+   "rampa": 60,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 10.0,
+      "gain": 0.24,
+      "iso": 0.5
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 10.0,
+    "profundidad": 0.6,
+    "forma": 1,
+    "color": [
+     1.0,
+     0.9,
+     0.75
+    ]
+   }
+  },
+  {
+   "nombre": "Observa",
+   "inicio": 490.73,
+   "duracion": 312.6,
+   "rampa": 30,
+   "voz": "ganzflicker/04_72743aa5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 10.0,
+      "gain": 0.24,
+      "iso": 0.5
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 10.0,
+    "profundidad": 0.7,
+    "forma": 1,
+    "color": [
+     1.0,
+     0.92,
+     0.8
+    ]
+   }
+  },
+  {
+   "nombre": "Más",
+   "inicio": 803.33,
+   "duracion": 300,
+   "rampa": 30,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 10.0,
+      "gain": 0.24,
+      "iso": 0.5
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 10.0,
+    "profundidad": 0.7,
+    "forma": 1,
+    "color": [
+     1.0,
+     0.92,
+     0.8
+    ]
+   }
+  },
+  {
+   "nombre": "Fundido",
+   "inicio": 1103.33,
+   "duracion": 116.3,
+   "rampa": 90,
+   "voz": "ganzflicker/06_96dfc497.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Reporte",
+   "inicio": 1219.62,
+   "duracion": 56.41,
+   "rampa": 15,
+   "voz": "ganzflicker/07_96964997.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 308,
+      "batido": 14.0,
+      "gain": 0.22
+     },
+     {
+      "portadora": 500,
+      "batido": 15.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.06
+     }
+    ],
+    "rosa": 0.03
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.2,
+     0.25,
+     0.7
+    ],
+    "intensidad": 0.22,
+    "velocidad": 0.04,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula02"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

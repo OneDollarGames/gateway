@@ -1,0 +1,509 @@
+{
+ "id": "respiracion_color",
+ "titulo": "Respiración de color",
+ "onda": "Onda II - Umbral",
+ "orden": 8,
+ "descripcion": "En Focus 12 respiras colores con un propósito: verde para calmar, rojo para fuerza, púrpura para restaurar. El domo se tiñe del color que respiras (Ganzfeld) y la guía de respiración va a 6 por minuto, la frecuencia de resonancia cardiaca con mejor evidencia. Termina viendo el cuerpo entero y perfecto. Unos 30 minutos.",
+ "requiere": "f12_intro",
+ "dormir": false,
+ "nocturna": false,
+ "duracion_total": 1512.53,
+ "segmentos": [
+  {
+   "nombre": "Prepárate",
+   "inicio": 0.0,
+   "duracion": 265.85,
+   "rampa": 12.0,
+   "voz": "respiracion_color/01_cd620ca5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": false
+   }
+  },
+  {
+   "nombre": "Focus 12",
+   "inicio": 265.85,
+   "duracion": 106.57,
+   "rampa": 30,
+   "voz": "respiracion_color/02_9a5918ba.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.2,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.35,
+    "complejidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Verde",
+   "inicio": 372.41,
+   "duracion": 262.95,
+   "rampa": 20,
+   "voz": "respiracion_color/03_372d4cc5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.05,
+     0.55,
+     0.2
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.15
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": true
+   }
+  },
+  {
+   "nombre": "Rojo",
+   "inicio": 635.36,
+   "duracion": 254.94,
+   "rampa": 20,
+   "voz": "respiracion_color/04_325fa86b.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.9,
+     0.22,
+     0.04
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.15
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": true
+   }
+  },
+  {
+   "nombre": "Púrpura",
+   "inicio": 890.3,
+   "duracion": 304.13,
+   "rampa": 20,
+   "voz": "respiracion_color/05_30cef1df.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.45,
+     0.08,
+     0.6
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.15
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": true
+   }
+  },
+  {
+   "nombre": "Entero y perfecto",
+   "inicio": 1194.43,
+   "duracion": 205.69,
+   "rampa": 20,
+   "voz": "respiracion_color/06_fd8ee1f4.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.85,
+     0.9,
+     1.0
+    ],
+    "intensidad": 0.7,
+    "velocidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Afirmación de salud",
+   "inicio": 1400.12,
+   "duracion": 55.24,
+   "rampa": 20,
+   "voz": "respiracion_color/07_6c350210.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Retorno",
+   "inicio": 1455.36,
+   "duracion": 57.17,
+   "rampa": 8,
+   "voz": "respiracion_color/08_0cf4e5da.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 308,
+      "batido": 14.0,
+      "gain": 0.22
+     },
+     {
+      "portadora": 500,
+      "batido": 15.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.06
+     }
+    ],
+    "rosa": 0.03
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.25,
+     0.35,
+     0.9
+    ],
+    "intensidad": 0.35,
+    "velocidad": 0.08,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+.vsconfig
+*.sln
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+*.xcodeproj
+*.xcworkspace
+# Audio oficial descargado aparte (356 MB, CC BY-NC-ND)
+Content/Gateway/Audio/
+__pycache__/

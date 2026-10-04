@@ -1,0 +1,532 @@
+{
+ "id": "f12_intro",
+ "titulo": "Introducción a Focus 12",
+ "onda": "Onda II - Umbral",
+ "orden": 7,
+ "descripcion": "Onda II. Desde Focus 10 se añaden las señales de Focus 12 (alfa a 10 Hz sobre 400-500 Hz): conciencia expandida. El domo pasa del orbe al túnel y al mandala. Opcionalmente, un flicker suave de 8 Hz con los ojos cerrados durante la exploración. Unos 38 minutos.",
+ "requiere": "f10_avanzado",
+ "dormir": false,
+ "nocturna": false,
+ "duracion_total": 2157.67,
+ "segmentos": [
+  {
+   "nombre": "Prepárate",
+   "inicio": 0.0,
+   "duracion": 256.82,
+   "rampa": 12.0,
+   "voz": "f12_intro/01_cd620ca5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "respiracion": {
+    "activa": true,
+    "rpm": 6.0,
+    "inhalar": 0.42,
+    "guia": false
+   }
+  },
+  {
+   "nombre": "Focus 10",
+   "inicio": 256.82,
+   "duracion": 105.94,
+   "rampa": 20,
+   "voz": "f12_intro/02_683c0765.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hacia Focus 12",
+   "inicio": 362.76,
+   "duracion": 278.16,
+   "rampa": 40,
+   "voz": "f12_intro/03_a85b7f51.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.2,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.35,
+    "complejidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Expande",
+   "inicio": 640.92,
+   "duracion": 337.35,
+   "rampa": 40,
+   "voz": "f12_intro/04_54b0e9a2.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "mandala",
+    "color": [
+     0.6,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.25,
+    "complejidad": 0.55,
+    "matiz": 0.25
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Luz",
+   "inicio": 978.27,
+   "duracion": 417.04,
+   "rampa": 20,
+   "voz": "f12_intro/05_8011c23b.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "mandala",
+    "color": [
+     0.6,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.25,
+    "complejidad": 0.55,
+    "matiz": 0.25
+   },
+   "flicker": {
+    "hz": 8.0,
+    "profundidad": 0.35,
+    "forma": 0,
+    "color": [
+     1.0,
+     0.95,
+     0.85
+    ]
+   }
+  },
+  {
+   "nombre": "Explora",
+   "inicio": 1395.31,
+   "duracion": 572.51,
+   "rampa": 30,
+   "voz": "f12_intro/06_13634a16.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.25,
+      "gain": 0.1
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.2
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.18,
+      "iso": 0.25
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.14
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 400,
+      "batido": 10.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 10.1,
+      "gain": 0.1
+     },
+     {
+      "portadora": 600,
+      "batido": 4.8,
+      "gain": 0.08
+     }
+    ],
+    "rosa": 0.06
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.3,
+     0.15,
+     0.8
+    ],
+    "intensidad": 0.45,
+    "velocidad": 0.18,
+    "complejidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Vuelve a 10",
+   "inicio": 1967.81,
+   "duracion": 90.8,
+   "rampa": 25,
+   "voz": "f12_intro/07_5aa4a337.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Afirmación de salud",
+   "inicio": 2058.62,
+   "duracion": 49.6,
+   "rampa": 12.0,
+   "voz": "f12_intro/08_6c350210.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.22
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.2,
+      "iso": 0.3
+     },
+     {
+      "portadora": 250,
+      "batido": 4.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.14
+     }
+    ],
+    "rosa": 0.07
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     1.0,
+     0.75,
+     0.3
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Retorno",
+   "inicio": 2108.22,
+   "duracion": 49.45,
+   "rampa": 8,
+   "voz": "f12_intro/09_0cf4e5da.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 308,
+      "batido": 14.0,
+      "gain": 0.22
+     },
+     {
+      "portadora": 500,
+      "batido": 15.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.06
+     }
+    ],
+    "rosa": 0.03
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.25,
+     0.35,
+     0.9
+    ],
+    "intensidad": 0.35,
+    "velocidad": 0.08,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

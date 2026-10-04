@@ -1,0 +1,358 @@
+{
+ "id": "hemisync1973",
+ "titulo": "Señales Hemi-Sync 1973 (audio oficial)",
+ "onda": "Laboratorio",
+ "orden": 17,
+ "descripcion": "El único audio Hemi-Sync que el Monroe Institute publica gratis (CC BY-NC-ND 4.0): 34 minutos de señales puras de 1973, sin voz, reproducidas tal cual con los visuales 3D del domo. Requiere descargarlo una vez con Tools/descargar_hemisync1973.py (356 MB, no está en el repositorio).",
+ "requiere": "f10_intro",
+ "dormir": false,
+ "nocturna": false,
+ "duracion_total": 2106.0,
+ "segmentos": [
+  {
+   "nombre": "Aviso",
+   "inicio": 0.0,
+   "duracion": 26.26,
+   "rampa": 6,
+   "voz": "hemisync1973/01_818f8421.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.2,
+     0.25,
+     0.7
+    ],
+    "intensidad": 0.22,
+    "velocidad": 0.04,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula02"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 1",
+   "inicio": 26.26,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/01.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.2,
+     0.25,
+     0.7
+    ],
+    "intensidad": 0.22,
+    "velocidad": 0.04,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula02"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 2",
+   "inicio": 233.03,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/02.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.05,
+     0.12,
+     0.45
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.2
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 3",
+   "inicio": 439.8,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/03.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 4",
+   "inicio": 646.57,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/04.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.3,
+     0.15,
+     0.8
+    ],
+    "intensidad": 0.45,
+    "velocidad": 0.18,
+    "complejidad": 0.3
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 5",
+   "inicio": 853.34,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/05.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "mandala",
+    "color": [
+     0.3,
+     0.5,
+     1.0
+    ],
+    "intensidad": 0.45,
+    "velocidad": 0.12,
+    "complejidad": 0.4,
+    "matiz": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 6",
+   "inicio": 1060.11,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/06.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.85,
+     0.9,
+     1.0
+    ],
+    "intensidad": 0.7,
+    "velocidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 7",
+   "inicio": 1266.88,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/07.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "tunel",
+    "color": [
+     0.2,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.55,
+    "velocidad": 0.35,
+    "complejidad": 0.4
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 8",
+   "inicio": 1473.65,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/08.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "mandala",
+    "color": [
+     0.6,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.25,
+    "complejidad": 0.55,
+    "matiz": 0.25
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 9",
+   "inicio": 1680.42,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/09.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.5,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.3,
+    "velocidad": 0.06,
+    "complejidad": 0.5,
+    "imagen": "T_Galaxy01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Hemi-Sync 1973, parte 10",
+   "inicio": 1887.19,
+   "duracion": 206.77,
+   "rampa": 40,
+   "voz": "../Audio/hemisync1973/10.wav",
+   "voz_gain": 0.8,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.25,
+     0.35,
+     0.9
+    ],
+    "intensidad": 0.35,
+    "velocidad": 0.08,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Retorno",
+   "inicio": 2093.96,
+   "duracion": 12.04,
+   "rampa": 8,
+   "voz": "hemisync1973/12_0cf4e5da.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 308,
+      "batido": 14.0,
+      "gain": 0.22
+     },
+     {
+      "portadora": 500,
+      "batido": 15.0,
+      "gain": 0.16
+     },
+     {
+      "portadora": 200,
+      "batido": 4.0,
+      "gain": 0.06
+     }
+    ],
+    "rosa": 0.03
+   },
+   "visual": {
+    "modo": "cosmos",
+    "color": [
+     0.25,
+     0.35,
+     0.9
+    ],
+    "intensidad": 0.35,
+    "velocidad": 0.08,
+    "complejidad": 0.5,
+    "imagen": "T_Nebula01"
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

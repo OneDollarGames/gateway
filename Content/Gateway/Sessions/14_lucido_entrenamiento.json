@@ -1,0 +1,851 @@
+{
+ "id": "lucido_entrenamiento",
+ "titulo": "Sueño lúcido: entrenamiento",
+ "onda": "Sueño lúcido",
+ "orden": 14,
+ "descripcion": "Protocolo TLR (Konkoly, Paller et al. 2021-2024): cuatro señales con guía verbal, luego doce señales mientras te duermes, con intervalos de 45 a 120 segundos. Úsala antes de dormir y después lanza 'Sueño lúcido: noche'. En el estudio, los sueños lúcidos por semana pasaron de 0.7 a 2.1. Unos 35 minutos; termina dormido.",
+ "requiere": "",
+ "dormir": true,
+ "nocturna": false,
+ "duracion_total": 1943.23,
+ "segmentos": [
+  {
+   "nombre": "Qué vas a hacer",
+   "inicio": 0.0,
+   "duracion": 43.15,
+   "rampa": 6,
+   "voz": "lucido_entrenamiento/01_64408bb4.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 50,
+      "batido": 0.5,
+      "gain": 0.14
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.18
+     }
+    ],
+    "rosa": 0.08,
+    "marron": 0.12,
+    "oceano": 0.1
+   },
+   "visual": {
+    "modo": "ganzfeld",
+    "color": [
+     0.03,
+     0.02,
+     0.08
+    ],
+    "intensidad": 0.4,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Señal 1",
+   "inicio": 43.15,
+   "duracion": 72.03,
+   "rampa": 5,
+   "voz": "lucido_entrenamiento/02_3c0aaec5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.4
+  },
+  {
+   "nombre": "Señal 2",
+   "inicio": 115.19,
+   "duracion": 71.64,
+   "rampa": 5,
+   "voz": "lucido_entrenamiento/03_3c0aaec5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.4
+  },
+  {
+   "nombre": "Señal 3",
+   "inicio": 186.83,
+   "duracion": 69.48,
+   "rampa": 5,
+   "voz": "lucido_entrenamiento/04_3c0aaec5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.4
+  },
+  {
+   "nombre": "Señal 4",
+   "inicio": 256.31,
+   "duracion": 69.83,
+   "rampa": 5,
+   "voz": "lucido_entrenamiento/05_3c0aaec5.wav",
+   "voz_gain": 0.6,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "orbe",
+    "color": [
+     0.45,
+     0.3,
+     1.0
+    ],
+    "intensidad": 0.6,
+    "velocidad": 0.35,
+    "complejidad": 0.5
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.4
+  },
+  {
+   "nombre": "A dormir",
+   "inicio": 326.14,
+   "duracion": 27.1,
+   "rampa": 10,
+   "voz": "lucido_entrenamiento/06_f399b8ab.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 250,
+      "batido": 6.0,
+      "gain": 0.26,
+      "iso": 0.45
+     },
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.12
+     }
+    ],
+    "rosa": 0.08
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Señal mientras duermes 1",
+   "inicio": 353.23,
+   "duracion": 45,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.28
+  },
+  {
+   "nombre": "Señal mientras duermes 2",
+   "inicio": 398.23,
+   "duracion": 70,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.272
+  },
+  {
+   "nombre": "Señal mientras duermes 3",
+   "inicio": 468.23,
+   "duracion": 55,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.264
+  },
+  {
+   "nombre": "Señal mientras duermes 4",
+   "inicio": 523.23,
+   "duracion": 65,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.256
+  },
+  {
+   "nombre": "Señal mientras duermes 5",
+   "inicio": 588.23,
+   "duracion": 70,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.248
+  },
+  {
+   "nombre": "Señal mientras duermes 6",
+   "inicio": 658.23,
+   "duracion": 80,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.24
+  },
+  {
+   "nombre": "Señal mientras duermes 7",
+   "inicio": 738.23,
+   "duracion": 65,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.232
+  },
+  {
+   "nombre": "Señal mientras duermes 8",
+   "inicio": 803.23,
+   "duracion": 60,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.224
+  },
+  {
+   "nombre": "Señal mientras duermes 9",
+   "inicio": 863.23,
+   "duracion": 75,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.216
+  },
+  {
+   "nombre": "Señal mientras duermes 10",
+   "inicio": 938.23,
+   "duracion": 75,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.208
+  },
+  {
+   "nombre": "Señal mientras duermes 11",
+   "inicio": 1013.23,
+   "duracion": 90,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2
+  },
+  {
+   "nombre": "Señal mientras duermes 12",
+   "inicio": 1103.23,
+   "duracion": 120,
+   "rampa": 20,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 4.0,
+      "gain": 0.18
+     },
+     {
+      "portadora": 300,
+      "batido": 4.0,
+      "gain": 0.12
+     },
+     {
+      "portadora": 500,
+      "batido": 2.0,
+      "gain": 0.08
+     }
+    ],
+    "marron": 0.14,
+    "oceano": 0.06
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.3,
+     0.4,
+     0.9
+    ],
+    "intensidad": 0.5,
+    "velocidad": 0.1
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.192
+  },
+  {
+   "nombre": "Delta",
+   "inicio": 1223.23,
+   "duracion": 600,
+   "rampa": 90,
+   "sonido": {
+    "capas": [
+     {
+      "portadora": 100,
+      "batido": 1.5,
+      "gain": 0.16
+     },
+     {
+      "portadora": 300,
+      "batido": 1.0,
+      "gain": 0.1
+     },
+     {
+      "portadora": 496,
+      "batido": 1.0,
+      "gain": 0.06
+     }
+    ],
+    "marron": 0.12,
+    "oceano": 0.05
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Silencio",
+   "inicio": 1823.23,
+   "duracion": 120,
+   "rampa": 90,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}

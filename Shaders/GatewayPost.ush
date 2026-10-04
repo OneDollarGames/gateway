@@ -1,0 +1,32 @@
+// Gateway: post-proceso. Flicker fotico de pantalla completa (seno o cuadrado con ciclo 40 %),
+// vineta suave y fundido a negro. Se incluye desde el nodo Custom de M_Post.
+#ifndef GATEWAY_POST_USH
+#define GATEWAY_POST_USH
+#define GW_TAU_POST 6.28318531
+
+float3 GatewayPost(float2 uv, float3 scene, float flickerHz, float flickerDepth, float flickerShape, float3 flickerColor, float fade, float t, float breath)
+{
+	float3 c = scene;
+
+	// vineta suave (el borde de la pantalla desaparece: menos "marco", mas campo)
+	float2 q = uv - 0.5;
+	float vig = 1.0 - smoothstep(0.3, 0.9, length(q) * 1.25);
+	c *= lerp(0.5, 1.0, vig);
+
+	// flicker: modula todo el campo hacia flickerColor
+	float on = step(0.01, flickerHz);
+	float ph = frac(t * flickerHz);
+	float pulseSin = 0.5 + 0.5 * sin(GW_TAU_POST * ph);
+	float pulseSq = step(ph, 0.4);
+	float pulse = lerp(pulseSin, pulseSq, saturate(flickerShape));
+	c = lerp(c, flickerColor, saturate(flickerDepth) * pulse * on);
+
+	// pulso de brillo minimo con la respiracion (casi subliminal)
+	c *= 0.97 + 0.03 * breath;
+
+	// fundido
+	c *= (1.0 - saturate(fade));
+	return c;
+}
+
+#endif

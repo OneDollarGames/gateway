@@ -1,0 +1,6615 @@
+{
+ "id": "lucido_noche",
+ "titulo": "Sueño lúcido: noche",
+ "onda": "Sueño lúcido",
+ "orden": 15,
+ "descripcion": "Protocolo nocturno TLR: seis horas de silencio y pantalla negra; después, durante dos horas (la fase rica en REM), la misma campana del entrenamiento cada 30 segundos, subiendo de volumen muy despacio, con un susurro cada cinco minutos. Deja los audífonos puestos y la computadora encendida. Pulsa Escape si te despierta. Dura 8 horas.",
+ "requiere": "lucido_entrenamiento",
+ "dormir": false,
+ "nocturna": true,
+ "duracion_total": 28820.61,
+ "segmentos": [
+  {
+   "nombre": "Noche",
+   "inicio": 0.0,
+   "duracion": 21.25,
+   "rampa": 5,
+   "voz": "lucido_noche/01_a0e0a15f.wav",
+   "voz_gain": 0.5,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Dormir",
+   "inicio": 21.25,
+   "duracion": 21540,
+   "rampa": 30,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  },
+  {
+   "nombre": "Cue 1",
+   "inicio": 21561.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.05
+  },
+  {
+   "nombre": "Cue 2",
+   "inicio": 21591.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0507
+  },
+  {
+   "nombre": "Cue 3",
+   "inicio": 21621.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0514
+  },
+  {
+   "nombre": "Cue 4",
+   "inicio": 21651.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.052
+  },
+  {
+   "nombre": "Cue 5",
+   "inicio": 21681.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0527
+  },
+  {
+   "nombre": "Cue 6",
+   "inicio": 21711.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0534
+  },
+  {
+   "nombre": "Cue 7",
+   "inicio": 21741.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0541
+  },
+  {
+   "nombre": "Cue 8",
+   "inicio": 21771.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0548
+  },
+  {
+   "nombre": "Cue 9",
+   "inicio": 21801.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0554
+  },
+  {
+   "nombre": "Cue 10",
+   "inicio": 21831.25,
+   "duracion": 30.91,
+   "rampa": 2,
+   "voz": "lucido_noche/12_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0561
+  },
+  {
+   "nombre": "Cue 11",
+   "inicio": 21862.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0568
+  },
+  {
+   "nombre": "Cue 12",
+   "inicio": 21892.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0575
+  },
+  {
+   "nombre": "Cue 13",
+   "inicio": 21922.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0582
+  },
+  {
+   "nombre": "Cue 14",
+   "inicio": 21952.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0589
+  },
+  {
+   "nombre": "Cue 15",
+   "inicio": 21982.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0595
+  },
+  {
+   "nombre": "Cue 16",
+   "inicio": 22012.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0602
+  },
+  {
+   "nombre": "Cue 17",
+   "inicio": 22042.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0609
+  },
+  {
+   "nombre": "Cue 18",
+   "inicio": 22072.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0616
+  },
+  {
+   "nombre": "Cue 19",
+   "inicio": 22102.16,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0623
+  },
+  {
+   "nombre": "Cue 20",
+   "inicio": 22132.16,
+   "duracion": 31.31,
+   "rampa": 2,
+   "voz": "lucido_noche/22_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0629
+  },
+  {
+   "nombre": "Cue 21",
+   "inicio": 22163.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0636
+  },
+  {
+   "nombre": "Cue 22",
+   "inicio": 22193.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0643
+  },
+  {
+   "nombre": "Cue 23",
+   "inicio": 22223.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.065
+  },
+  {
+   "nombre": "Cue 24",
+   "inicio": 22253.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0657
+  },
+  {
+   "nombre": "Cue 25",
+   "inicio": 22283.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0664
+  },
+  {
+   "nombre": "Cue 26",
+   "inicio": 22313.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.067
+  },
+  {
+   "nombre": "Cue 27",
+   "inicio": 22343.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0677
+  },
+  {
+   "nombre": "Cue 28",
+   "inicio": 22373.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0684
+  },
+  {
+   "nombre": "Cue 29",
+   "inicio": 22403.48,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0691
+  },
+  {
+   "nombre": "Cue 30",
+   "inicio": 22433.48,
+   "duracion": 29.38,
+   "rampa": 2,
+   "voz": "lucido_noche/32_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0698
+  },
+  {
+   "nombre": "Cue 31",
+   "inicio": 22462.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0705
+  },
+  {
+   "nombre": "Cue 32",
+   "inicio": 22492.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0711
+  },
+  {
+   "nombre": "Cue 33",
+   "inicio": 22522.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0718
+  },
+  {
+   "nombre": "Cue 34",
+   "inicio": 22552.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0725
+  },
+  {
+   "nombre": "Cue 35",
+   "inicio": 22582.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0732
+  },
+  {
+   "nombre": "Cue 36",
+   "inicio": 22612.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0739
+  },
+  {
+   "nombre": "Cue 37",
+   "inicio": 22642.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0746
+  },
+  {
+   "nombre": "Cue 38",
+   "inicio": 22672.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0752
+  },
+  {
+   "nombre": "Cue 39",
+   "inicio": 22702.86,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0759
+  },
+  {
+   "nombre": "Cue 40",
+   "inicio": 22732.86,
+   "duracion": 30.38,
+   "rampa": 2,
+   "voz": "lucido_noche/42_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0766
+  },
+  {
+   "nombre": "Cue 41",
+   "inicio": 22763.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0773
+  },
+  {
+   "nombre": "Cue 42",
+   "inicio": 22793.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.078
+  },
+  {
+   "nombre": "Cue 43",
+   "inicio": 22823.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0787
+  },
+  {
+   "nombre": "Cue 44",
+   "inicio": 22853.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0794
+  },
+  {
+   "nombre": "Cue 45",
+   "inicio": 22883.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.08
+  },
+  {
+   "nombre": "Cue 46",
+   "inicio": 22913.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0807
+  },
+  {
+   "nombre": "Cue 47",
+   "inicio": 22943.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0814
+  },
+  {
+   "nombre": "Cue 48",
+   "inicio": 22973.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0821
+  },
+  {
+   "nombre": "Cue 49",
+   "inicio": 23003.24,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0828
+  },
+  {
+   "nombre": "Cue 50",
+   "inicio": 23033.24,
+   "duracion": 30.18,
+   "rampa": 2,
+   "voz": "lucido_noche/52_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0835
+  },
+  {
+   "nombre": "Cue 51",
+   "inicio": 23063.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0842
+  },
+  {
+   "nombre": "Cue 52",
+   "inicio": 23093.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0848
+  },
+  {
+   "nombre": "Cue 53",
+   "inicio": 23123.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0855
+  },
+  {
+   "nombre": "Cue 54",
+   "inicio": 23153.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0862
+  },
+  {
+   "nombre": "Cue 55",
+   "inicio": 23183.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0869
+  },
+  {
+   "nombre": "Cue 56",
+   "inicio": 23213.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0876
+  },
+  {
+   "nombre": "Cue 57",
+   "inicio": 23243.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0883
+  },
+  {
+   "nombre": "Cue 58",
+   "inicio": 23273.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.089
+  },
+  {
+   "nombre": "Cue 59",
+   "inicio": 23303.42,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0897
+  },
+  {
+   "nombre": "Cue 60",
+   "inicio": 23333.42,
+   "duracion": 30.33,
+   "rampa": 2,
+   "voz": "lucido_noche/62_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0903
+  },
+  {
+   "nombre": "Cue 61",
+   "inicio": 23363.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.091
+  },
+  {
+   "nombre": "Cue 62",
+   "inicio": 23393.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0917
+  },
+  {
+   "nombre": "Cue 63",
+   "inicio": 23423.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0924
+  },
+  {
+   "nombre": "Cue 64",
+   "inicio": 23453.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0931
+  },
+  {
+   "nombre": "Cue 65",
+   "inicio": 23483.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0938
+  },
+  {
+   "nombre": "Cue 66",
+   "inicio": 23513.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0945
+  },
+  {
+   "nombre": "Cue 67",
+   "inicio": 23543.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0952
+  },
+  {
+   "nombre": "Cue 68",
+   "inicio": 23573.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0959
+  },
+  {
+   "nombre": "Cue 69",
+   "inicio": 23603.74,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0965
+  },
+  {
+   "nombre": "Cue 70",
+   "inicio": 23633.74,
+   "duracion": 30.69,
+   "rampa": 2,
+   "voz": "lucido_noche/72_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0972
+  },
+  {
+   "nombre": "Cue 71",
+   "inicio": 23664.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0979
+  },
+  {
+   "nombre": "Cue 72",
+   "inicio": 23694.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0986
+  },
+  {
+   "nombre": "Cue 73",
+   "inicio": 23724.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.0993
+  },
+  {
+   "nombre": "Cue 74",
+   "inicio": 23754.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1
+  },
+  {
+   "nombre": "Cue 75",
+   "inicio": 23784.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1007
+  },
+  {
+   "nombre": "Cue 76",
+   "inicio": 23814.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1014
+  },
+  {
+   "nombre": "Cue 77",
+   "inicio": 23844.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1021
+  },
+  {
+   "nombre": "Cue 78",
+   "inicio": 23874.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1027
+  },
+  {
+   "nombre": "Cue 79",
+   "inicio": 23904.43,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1034
+  },
+  {
+   "nombre": "Cue 80",
+   "inicio": 23934.43,
+   "duracion": 29.53,
+   "rampa": 2,
+   "voz": "lucido_noche/82_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1041
+  },
+  {
+   "nombre": "Cue 81",
+   "inicio": 23963.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1048
+  },
+  {
+   "nombre": "Cue 82",
+   "inicio": 23993.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1055
+  },
+  {
+   "nombre": "Cue 83",
+   "inicio": 24023.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1062
+  },
+  {
+   "nombre": "Cue 84",
+   "inicio": 24053.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1069
+  },
+  {
+   "nombre": "Cue 85",
+   "inicio": 24083.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1076
+  },
+  {
+   "nombre": "Cue 86",
+   "inicio": 24113.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1083
+  },
+  {
+   "nombre": "Cue 87",
+   "inicio": 24143.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.109
+  },
+  {
+   "nombre": "Cue 88",
+   "inicio": 24173.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1097
+  },
+  {
+   "nombre": "Cue 89",
+   "inicio": 24203.96,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1104
+  },
+  {
+   "nombre": "Cue 90",
+   "inicio": 24233.96,
+   "duracion": 29.72,
+   "rampa": 2,
+   "voz": "lucido_noche/92_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.111
+  },
+  {
+   "nombre": "Cue 91",
+   "inicio": 24263.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1117
+  },
+  {
+   "nombre": "Cue 92",
+   "inicio": 24293.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1124
+  },
+  {
+   "nombre": "Cue 93",
+   "inicio": 24323.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1131
+  },
+  {
+   "nombre": "Cue 94",
+   "inicio": 24353.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1138
+  },
+  {
+   "nombre": "Cue 95",
+   "inicio": 24383.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1145
+  },
+  {
+   "nombre": "Cue 96",
+   "inicio": 24413.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1152
+  },
+  {
+   "nombre": "Cue 97",
+   "inicio": 24443.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1159
+  },
+  {
+   "nombre": "Cue 98",
+   "inicio": 24473.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1166
+  },
+  {
+   "nombre": "Cue 99",
+   "inicio": 24503.69,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1173
+  },
+  {
+   "nombre": "Cue 100",
+   "inicio": 24533.69,
+   "duracion": 29.72,
+   "rampa": 2,
+   "voz": "lucido_noche/102_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.118
+  },
+  {
+   "nombre": "Cue 101",
+   "inicio": 24563.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1187
+  },
+  {
+   "nombre": "Cue 102",
+   "inicio": 24593.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1194
+  },
+  {
+   "nombre": "Cue 103",
+   "inicio": 24623.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1201
+  },
+  {
+   "nombre": "Cue 104",
+   "inicio": 24653.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1208
+  },
+  {
+   "nombre": "Cue 105",
+   "inicio": 24683.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1214
+  },
+  {
+   "nombre": "Cue 106",
+   "inicio": 24713.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1221
+  },
+  {
+   "nombre": "Cue 107",
+   "inicio": 24743.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1228
+  },
+  {
+   "nombre": "Cue 108",
+   "inicio": 24773.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1235
+  },
+  {
+   "nombre": "Cue 109",
+   "inicio": 24803.41,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1242
+  },
+  {
+   "nombre": "Cue 110",
+   "inicio": 24833.41,
+   "duracion": 29.09,
+   "rampa": 2,
+   "voz": "lucido_noche/112_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1249
+  },
+  {
+   "nombre": "Cue 111",
+   "inicio": 24862.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1256
+  },
+  {
+   "nombre": "Cue 112",
+   "inicio": 24892.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1263
+  },
+  {
+   "nombre": "Cue 113",
+   "inicio": 24922.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.127
+  },
+  {
+   "nombre": "Cue 114",
+   "inicio": 24952.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1277
+  },
+  {
+   "nombre": "Cue 115",
+   "inicio": 24982.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1284
+  },
+  {
+   "nombre": "Cue 116",
+   "inicio": 25012.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1291
+  },
+  {
+   "nombre": "Cue 117",
+   "inicio": 25042.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1298
+  },
+  {
+   "nombre": "Cue 118",
+   "inicio": 25072.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1305
+  },
+  {
+   "nombre": "Cue 119",
+   "inicio": 25102.5,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1312
+  },
+  {
+   "nombre": "Cue 120",
+   "inicio": 25132.5,
+   "duracion": 29.55,
+   "rampa": 2,
+   "voz": "lucido_noche/122_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1319
+  },
+  {
+   "nombre": "Cue 121",
+   "inicio": 25162.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1326
+  },
+  {
+   "nombre": "Cue 122",
+   "inicio": 25192.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1333
+  },
+  {
+   "nombre": "Cue 123",
+   "inicio": 25222.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.134
+  },
+  {
+   "nombre": "Cue 124",
+   "inicio": 25252.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1347
+  },
+  {
+   "nombre": "Cue 125",
+   "inicio": 25282.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1354
+  },
+  {
+   "nombre": "Cue 126",
+   "inicio": 25312.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1361
+  },
+  {
+   "nombre": "Cue 127",
+   "inicio": 25342.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1368
+  },
+  {
+   "nombre": "Cue 128",
+   "inicio": 25372.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1375
+  },
+  {
+   "nombre": "Cue 129",
+   "inicio": 25402.05,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1382
+  },
+  {
+   "nombre": "Cue 130",
+   "inicio": 25432.05,
+   "duracion": 28.7,
+   "rampa": 2,
+   "voz": "lucido_noche/132_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1389
+  },
+  {
+   "nombre": "Cue 131",
+   "inicio": 25460.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1396
+  },
+  {
+   "nombre": "Cue 132",
+   "inicio": 25490.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1402
+  },
+  {
+   "nombre": "Cue 133",
+   "inicio": 25520.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1409
+  },
+  {
+   "nombre": "Cue 134",
+   "inicio": 25550.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1416
+  },
+  {
+   "nombre": "Cue 135",
+   "inicio": 25580.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1423
+  },
+  {
+   "nombre": "Cue 136",
+   "inicio": 25610.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.143
+  },
+  {
+   "nombre": "Cue 137",
+   "inicio": 25640.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1437
+  },
+  {
+   "nombre": "Cue 138",
+   "inicio": 25670.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1444
+  },
+  {
+   "nombre": "Cue 139",
+   "inicio": 25700.75,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1451
+  },
+  {
+   "nombre": "Cue 140",
+   "inicio": 25730.75,
+   "duracion": 30.01,
+   "rampa": 2,
+   "voz": "lucido_noche/142_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1458
+  },
+  {
+   "nombre": "Cue 141",
+   "inicio": 25760.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1465
+  },
+  {
+   "nombre": "Cue 142",
+   "inicio": 25790.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1472
+  },
+  {
+   "nombre": "Cue 143",
+   "inicio": 25820.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1479
+  },
+  {
+   "nombre": "Cue 144",
+   "inicio": 25850.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1486
+  },
+  {
+   "nombre": "Cue 145",
+   "inicio": 25880.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1493
+  },
+  {
+   "nombre": "Cue 146",
+   "inicio": 25910.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.15
+  },
+  {
+   "nombre": "Cue 147",
+   "inicio": 25940.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1507
+  },
+  {
+   "nombre": "Cue 148",
+   "inicio": 25970.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1514
+  },
+  {
+   "nombre": "Cue 149",
+   "inicio": 26000.76,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1521
+  },
+  {
+   "nombre": "Cue 150",
+   "inicio": 26030.76,
+   "duracion": 30.16,
+   "rampa": 2,
+   "voz": "lucido_noche/152_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1528
+  },
+  {
+   "nombre": "Cue 151",
+   "inicio": 26060.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1536
+  },
+  {
+   "nombre": "Cue 152",
+   "inicio": 26090.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1543
+  },
+  {
+   "nombre": "Cue 153",
+   "inicio": 26120.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.155
+  },
+  {
+   "nombre": "Cue 154",
+   "inicio": 26150.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1557
+  },
+  {
+   "nombre": "Cue 155",
+   "inicio": 26180.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1564
+  },
+  {
+   "nombre": "Cue 156",
+   "inicio": 26210.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1571
+  },
+  {
+   "nombre": "Cue 157",
+   "inicio": 26240.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1578
+  },
+  {
+   "nombre": "Cue 158",
+   "inicio": 26270.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1585
+  },
+  {
+   "nombre": "Cue 159",
+   "inicio": 26300.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1592
+  },
+  {
+   "nombre": "Cue 160",
+   "inicio": 26330.92,
+   "duracion": 30.35,
+   "rampa": 2,
+   "voz": "lucido_noche/162_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1599
+  },
+  {
+   "nombre": "Cue 161",
+   "inicio": 26361.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1606
+  },
+  {
+   "nombre": "Cue 162",
+   "inicio": 26391.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1613
+  },
+  {
+   "nombre": "Cue 163",
+   "inicio": 26421.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.162
+  },
+  {
+   "nombre": "Cue 164",
+   "inicio": 26451.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1627
+  },
+  {
+   "nombre": "Cue 165",
+   "inicio": 26481.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1634
+  },
+  {
+   "nombre": "Cue 166",
+   "inicio": 26511.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1641
+  },
+  {
+   "nombre": "Cue 167",
+   "inicio": 26541.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1648
+  },
+  {
+   "nombre": "Cue 168",
+   "inicio": 26571.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1655
+  },
+  {
+   "nombre": "Cue 169",
+   "inicio": 26601.27,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1662
+  },
+  {
+   "nombre": "Cue 170",
+   "inicio": 26631.27,
+   "duracion": 28.98,
+   "rampa": 2,
+   "voz": "lucido_noche/172_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1669
+  },
+  {
+   "nombre": "Cue 171",
+   "inicio": 26660.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1676
+  },
+  {
+   "nombre": "Cue 172",
+   "inicio": 26690.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1683
+  },
+  {
+   "nombre": "Cue 173",
+   "inicio": 26720.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.169
+  },
+  {
+   "nombre": "Cue 174",
+   "inicio": 26750.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1697
+  },
+  {
+   "nombre": "Cue 175",
+   "inicio": 26780.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1704
+  },
+  {
+   "nombre": "Cue 176",
+   "inicio": 26810.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1711
+  },
+  {
+   "nombre": "Cue 177",
+   "inicio": 26840.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1718
+  },
+  {
+   "nombre": "Cue 178",
+   "inicio": 26870.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1726
+  },
+  {
+   "nombre": "Cue 179",
+   "inicio": 26900.25,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1733
+  },
+  {
+   "nombre": "Cue 180",
+   "inicio": 26930.25,
+   "duracion": 29.66,
+   "rampa": 2,
+   "voz": "lucido_noche/182_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.174
+  },
+  {
+   "nombre": "Cue 181",
+   "inicio": 26959.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1747
+  },
+  {
+   "nombre": "Cue 182",
+   "inicio": 26989.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1754
+  },
+  {
+   "nombre": "Cue 183",
+   "inicio": 27019.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1761
+  },
+  {
+   "nombre": "Cue 184",
+   "inicio": 27049.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1768
+  },
+  {
+   "nombre": "Cue 185",
+   "inicio": 27079.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1775
+  },
+  {
+   "nombre": "Cue 186",
+   "inicio": 27109.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1782
+  },
+  {
+   "nombre": "Cue 187",
+   "inicio": 27139.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1789
+  },
+  {
+   "nombre": "Cue 188",
+   "inicio": 27169.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1796
+  },
+  {
+   "nombre": "Cue 189",
+   "inicio": 27199.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1803
+  },
+  {
+   "nombre": "Cue 190",
+   "inicio": 27229.92,
+   "duracion": 30.63,
+   "rampa": 2,
+   "voz": "lucido_noche/192_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.181
+  },
+  {
+   "nombre": "Cue 191",
+   "inicio": 27260.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1817
+  },
+  {
+   "nombre": "Cue 192",
+   "inicio": 27290.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1825
+  },
+  {
+   "nombre": "Cue 193",
+   "inicio": 27320.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1832
+  },
+  {
+   "nombre": "Cue 194",
+   "inicio": 27350.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1839
+  },
+  {
+   "nombre": "Cue 195",
+   "inicio": 27380.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1846
+  },
+  {
+   "nombre": "Cue 196",
+   "inicio": 27410.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1853
+  },
+  {
+   "nombre": "Cue 197",
+   "inicio": 27440.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.186
+  },
+  {
+   "nombre": "Cue 198",
+   "inicio": 27470.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1867
+  },
+  {
+   "nombre": "Cue 199",
+   "inicio": 27500.54,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1874
+  },
+  {
+   "nombre": "Cue 200",
+   "inicio": 27530.54,
+   "duracion": 29.38,
+   "rampa": 2,
+   "voz": "lucido_noche/202_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1881
+  },
+  {
+   "nombre": "Cue 201",
+   "inicio": 27559.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1888
+  },
+  {
+   "nombre": "Cue 202",
+   "inicio": 27589.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1895
+  },
+  {
+   "nombre": "Cue 203",
+   "inicio": 27619.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1903
+  },
+  {
+   "nombre": "Cue 204",
+   "inicio": 27649.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.191
+  },
+  {
+   "nombre": "Cue 205",
+   "inicio": 27679.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1917
+  },
+  {
+   "nombre": "Cue 206",
+   "inicio": 27709.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1924
+  },
+  {
+   "nombre": "Cue 207",
+   "inicio": 27739.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1931
+  },
+  {
+   "nombre": "Cue 208",
+   "inicio": 27769.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1938
+  },
+  {
+   "nombre": "Cue 209",
+   "inicio": 27799.92,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1945
+  },
+  {
+   "nombre": "Cue 210",
+   "inicio": 27829.92,
+   "duracion": 29.72,
+   "rampa": 2,
+   "voz": "lucido_noche/212_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1952
+  },
+  {
+   "nombre": "Cue 211",
+   "inicio": 27859.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1959
+  },
+  {
+   "nombre": "Cue 212",
+   "inicio": 27889.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1967
+  },
+  {
+   "nombre": "Cue 213",
+   "inicio": 27919.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1974
+  },
+  {
+   "nombre": "Cue 214",
+   "inicio": 27949.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1981
+  },
+  {
+   "nombre": "Cue 215",
+   "inicio": 27979.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1988
+  },
+  {
+   "nombre": "Cue 216",
+   "inicio": 28009.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.1995
+  },
+  {
+   "nombre": "Cue 217",
+   "inicio": 28039.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2002
+  },
+  {
+   "nombre": "Cue 218",
+   "inicio": 28069.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2009
+  },
+  {
+   "nombre": "Cue 219",
+   "inicio": 28099.64,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2016
+  },
+  {
+   "nombre": "Cue 220",
+   "inicio": 28129.64,
+   "duracion": 30.51,
+   "rampa": 2,
+   "voz": "lucido_noche/222_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2024
+  },
+  {
+   "nombre": "Cue 221",
+   "inicio": 28160.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2031
+  },
+  {
+   "nombre": "Cue 222",
+   "inicio": 28190.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2038
+  },
+  {
+   "nombre": "Cue 223",
+   "inicio": 28220.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2045
+  },
+  {
+   "nombre": "Cue 224",
+   "inicio": 28250.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2052
+  },
+  {
+   "nombre": "Cue 225",
+   "inicio": 28280.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2059
+  },
+  {
+   "nombre": "Cue 226",
+   "inicio": 28310.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2066
+  },
+  {
+   "nombre": "Cue 227",
+   "inicio": 28340.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2074
+  },
+  {
+   "nombre": "Cue 228",
+   "inicio": 28370.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2081
+  },
+  {
+   "nombre": "Cue 229",
+   "inicio": 28400.15,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2088
+  },
+  {
+   "nombre": "Cue 230",
+   "inicio": 28430.15,
+   "duracion": 30.85,
+   "rampa": 2,
+   "voz": "lucido_noche/232_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2095
+  },
+  {
+   "nombre": "Cue 231",
+   "inicio": 28461.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2102
+  },
+  {
+   "nombre": "Cue 232",
+   "inicio": 28491.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2109
+  },
+  {
+   "nombre": "Cue 233",
+   "inicio": 28521.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2117
+  },
+  {
+   "nombre": "Cue 234",
+   "inicio": 28551.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2124
+  },
+  {
+   "nombre": "Cue 235",
+   "inicio": 28581.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2131
+  },
+  {
+   "nombre": "Cue 236",
+   "inicio": 28611.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2138
+  },
+  {
+   "nombre": "Cue 237",
+   "inicio": 28641.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2145
+  },
+  {
+   "nombre": "Cue 238",
+   "inicio": 28671.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2152
+  },
+  {
+   "nombre": "Cue 239",
+   "inicio": 28701.0,
+   "duracion": 30,
+   "rampa": 2,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.216
+  },
+  {
+   "nombre": "Cue 240",
+   "inicio": 28731.0,
+   "duracion": 29.61,
+   "rampa": 2,
+   "voz": "lucido_noche/242_0874ab6e.wav",
+   "voz_gain": 0.25,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   },
+   "campana": true,
+   "campana_hz": 528.0,
+   "campana_gain": 0.2167
+  },
+  {
+   "nombre": "Fin",
+   "inicio": 28760.61,
+   "duracion": 60,
+   "rampa": 5,
+   "sonido": {
+    "capas": [],
+    "rosa": 0.0
+   },
+   "visual": {
+    "modo": "vacio",
+    "color": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "intensidad": 0.0,
+    "velocidad": 0.0
+   },
+   "flicker": {
+    "hz": 0,
+    "profundidad": 0
+   }
+  }
+ ]
+}
