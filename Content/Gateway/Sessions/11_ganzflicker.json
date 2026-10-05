@@ -295,8 +295,7 @@
     ],
     "intensidad": 0.11,
     "velocidad": 0.02,
-    "complejidad": 0.5,
-    "imagen": "T_Nebula03"
+    "complejidad": 0.5
    },
    "flicker": {
     "hz": 0,

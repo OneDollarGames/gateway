@@ -232,8 +232,7 @@
     ],
     "intensidad": 0.18,
     "velocidad": 0.03,
-    "complejidad": 0.5,
-    "imagen": "T_Galaxy01"
+    "complejidad": 0.5
    },
    "flicker": {
     "hz": 0,
@@ -291,8 +290,7 @@
     ],
     "intensidad": 0.16,
     "velocidad": 0.025,
-    "complejidad": 0.5,
-    "imagen": "T_Nebula03"
+    "complejidad": 0.5
    },
    "flicker": {
     "hz": 7.83,
@@ -354,8 +352,7 @@
     ],
     "intensidad": 0.18,
     "velocidad": 0.03,
-    "complejidad": 0.5,
-    "imagen": "T_Galaxy01"
+    "complejidad": 0.5
    },
    "flicker": {
     "hz": 0,
@@ -495,8 +492,7 @@
     ],
     "intensidad": 0.15,
     "velocidad": 0.03,
-    "complejidad": 0.5,
-    "imagen": "T_Galaxy01"
+    "complejidad": 0.5
    },
    "flicker": {
     "hz": 0,
