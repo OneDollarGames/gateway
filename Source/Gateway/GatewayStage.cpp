@@ -213,10 +213,12 @@ void AGatewayStage::BeginPlay()
 			PostMID = UMaterialInstanceDynamic::Create(PostBase, this);
 			S.WeightedBlendables.Array.Add(FWeightedBlendable(1.f, PostMID));
 		}
+#if !PLATFORM_ANDROID
 		else
 		{
 			UE_LOG(LogGateway, Warning, TEXT("M_Post no existe: corre Tools/setup_assets.py en el editor"));
 		}
+#endif
 	}
 
 	FadeNow = 1.f; FadeTarget = 0.f; FadeSpeed = 1.f / 3.f;

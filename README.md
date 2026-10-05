@@ -25,6 +25,17 @@ Tools\setup_assets.bat      :: crea materiales, importa imágenes/modelos y el m
 Tools\run_game.bat          :: lanza la experiencia (-game); con el Quest conectado arranca en VR
 ```
 
+### Quest nativo (APK, sin PC)
+
+Requiere el componente **Android** de UE 5.5 (Epic Games Launcher → 5.5.4 → ▾ → Options → Android), Android SDK 34 + NDK 25.2.9519653 + JDK 17 (rutas en `Config/DefaultEngine.ini`, `AndroidSDKSettings`) y el visor en modo de desarrollador (Ajustes → Sistema → Desarrollador) con la depuración USB aceptada.
+
+```bat
+Tools\package_quest.bat                                   :: BuildCookRun Android ASTC → Build\Quest\Android_ASTC\Gateway-arm64.apk
+adb install -r -g Build\Quest\Android_ASTC\Gateway-arm64.apk
+```
+
+En el visor queda en **Biblioteca → Fuentes desconocidas → Gateway**. En Android el flicker y el fundido se aplican en el shader del domo (sin post-proceso, `r.MobileHDR=False`), hay 600 partículas y no hay selector de salida de audio (usa el audio del visor o unos AirPods emparejados al Quest).
+
 Las sesiones y voces ya están generadas en el repo. Para regenerarlas: `python3 Tools/sesiones.py` (usa OpenAI TTS, voz *nova*). El audio oficial Hemi-Sync 1973 (sesión 17) se descarga con `python3 Tools/descargar_hemisync1973.py`.
 
 ## Estructura

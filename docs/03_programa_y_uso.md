@@ -9,22 +9,22 @@ Todo el audio sale por un único sintetizador (`UGatewaySynth`), de modo que el 
 ## Antes de empezar
 
 1. **AirPods** emparejados con Windows. En *Salida de audio* elige el perfil **estéreo** ("Headphones"/"Stereo"); el perfil "Hands-Free"/"Headset" es mono y anula el batido binaural. El programa lo elige solo si lo encuentra.
-2. **Quest 3**: abre Quest Link (cable o Air Link) y luego lanza el programa; arranca en VR (`bStartInVR`). Sin visor, corre en el monitor.
+2. **Quest 3**: dos formas. (a) Nativo: instala el APK (`Tools\package_quest.bat` + `adb install`) y ábrelo desde Biblioteca → Fuentes desconocidas; no necesita PC. (b) PC VR: abre Quest Link (cable o Air Link) y luego lanza el programa; arranca en VR (`bStartInVR`). Sin visor, corre en el monitor.
 3. Lugar oscuro y tranquilo, 45 minutos sin interrupciones, una hora después de comer. Acostado o reclinado.
 4. Volumen: la voz apenas audible; los tonos por debajo de la voz.
 
 ## Controles
 
-| Acción | Teclado/ratón | Quest (Touch) |
+| Acción | Teclado/ratón | Quest (mando derecho) |
 |---|---|---|
-| Elegir sesión / opción | ↑ ↓, clic | stick izquierdo arriba/abajo |
-| Ajustar valor | ← → | stick izquierdo izq/der |
-| Comenzar / confirmar | Enter, Espacio | A, gatillo |
+| Elegir sesión / opción | ↑ ↓, clic | stick arriba/abajo |
+| Ajustar valor | ← → | stick izq/der |
+| Comenzar / confirmar | Enter, Espacio | A |
 | Volver / terminar sesión | Esc | B |
-| Pausa | Espacio | X (o A durante la sesión) |
-| Saltar segmento | → | stick derecho a la derecha |
-| Recentrar el panel / vista | — | Y |
-| Ajustes / Salida de audio / Ayuda | O / D / H | X en el menú / desde Ajustes / B en el menú |
+| Pausa | Espacio | A durante la sesión (o click del stick) |
+| Saltar segmento | → | stick a la derecha durante la sesión |
+| Recentrar el panel / vista | — | gatillo |
+| Ajustes / Salida de audio / Ayuda | O / D / H | click del stick en el menú / desde Ajustes / B en el menú |
 | Pantalla completa | F, Alt+Enter | — |
 
 ## El programa (de menos a más)
