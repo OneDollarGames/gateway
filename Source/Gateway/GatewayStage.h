@@ -48,6 +48,7 @@ public:
 	UPROPERTY(VisibleAnywhere) UPointLightComponent* PropLight = nullptr;
 	float PropAlpha = 0.f;
 	UPROPERTY() UMaterialInstanceDynamic* DomeMID = nullptr;
+	UPROPERTY() UTexture2D* BlackTex = nullptr;   // imagen "ninguna": sin esto el material conserva la ultima textura
 	UPROPERTY() UMaterialInstanceDynamic* PostMID = nullptr;
 	UPROPERTY() APostProcessVolume* PostVolume = nullptr;
 

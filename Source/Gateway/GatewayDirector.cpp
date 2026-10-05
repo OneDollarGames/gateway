@@ -84,8 +84,9 @@ void AGatewayDirector::EndPlay(const EEndPlayReason::Type Reason)
 
 void AGatewayDirector::ApplyMenuVisual()
 {
-	// Fondo del menu: galaxia tenue en indigo, deriva lentisima (el usuario pidio algo suave y "espiritual")
-	FGatewayVisual V; V.Mode = EGatewayVisualMode::Cosmos; V.Color = FLinearColor(0.10f, 0.14f, 0.38f); V.Intensity = 0.13f; V.Speed = 0.03f; V.Complexity = 0.5f; V.Image = TEXT("T_Galaxy01");
+	// Fondo del menu: solo estrellas y nebulosa procedural indigo, sin imagen (la imagen gira con la
+	// cabeza y tapaba las estrellas, que son las que se aprecian al mover la vista)
+	FGatewayVisual V; V.Mode = EGatewayVisualMode::Cosmos; V.Color = FLinearColor(0.10f, 0.14f, 0.38f); V.Intensity = 0.16f; V.Speed = 0.03f; V.Complexity = 0.5f; V.Image.Empty();
 	Stage->SetVisual(V, 4.f);
 	FGatewayFlicker F; Stage->SetFlicker(F, 1.f);
 	Stage->SetFade(0.f, 2.f);

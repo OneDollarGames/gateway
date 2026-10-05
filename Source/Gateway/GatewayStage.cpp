@@ -162,6 +162,15 @@ void AGatewayStage::BeginPlay()
 {
 	Super::BeginPlay();
 
+	BlackTex = UTexture2D::CreateTransient(1, 1, PF_B8G8R8A8);
+	if (BlackTex)
+	{
+		void* Data = BlackTex->GetPlatformData()->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
+		FMemory::Memzero(Data, 4);
+		BlackTex->GetPlatformData()->Mips[0].BulkData.Unlock();
+		BlackTex->UpdateResource();
+	}
+
 	if (UMaterialInterface* Base = Dome->GetMaterial(0))
 	{
 		DomeMID = UMaterialInstanceDynamic::Create(Base, this);
@@ -329,8 +338,8 @@ void AGatewayStage::ApplyParams()
 		DomeMID->SetVectorParameterValue(TEXT("FlickerColor"), FlickerNow.Color);
 		DomeMID->SetScalarParameterValue(TEXT("Fade"), bDomeFX ? FadeNow : 0.f);
 		DomeMID->SetVectorParameterValue(TEXT("ViewForward"), FLinearColor(ViewForward.X, ViewForward.Y, ViewForward.Z, 0.f));
-		if (CurA.Image) { DomeMID->SetTextureParameterValue(TEXT("ImageA"), CurA.Image); }
-		if (CurB.Image) { DomeMID->SetTextureParameterValue(TEXT("ImageB"), CurB.Image); }
+		if (CurA.Image || BlackTex) { DomeMID->SetTextureParameterValue(TEXT("ImageA"), CurA.Image ? CurA.Image : BlackTex); }
+		if (CurB.Image || BlackTex) { DomeMID->SetTextureParameterValue(TEXT("ImageB"), CurB.Image ? CurB.Image : BlackTex); }
 	}
 	if (PostMID)
 	{

@@ -40,11 +40,22 @@ AGatewayVRPanel::AGatewayVRPanel()
 	if (Plane.Succeeded()) { Backdrop->SetStaticMesh(Plane.Object); }
 	// Plano de 100x100 en XY; lo giramos para que quede vertical frente al usuario (normal hacia -X)
 	Backdrop->SetRelativeRotation(FRotator(90.f, 0.f, 0.f));
-	Backdrop->SetRelativeScale3D(FVector(1.3f, 2.2f, 1.f)); // 220 cm ancho x 130 cm alto
+	Backdrop->SetRelativeScale3D(FVector(1.56f, 2.2f, 1.f)); // 220 cm ancho x 156 cm alto
 	Backdrop->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	Backdrop->SetCastShadow(false);
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> PanelMat(TEXT("/Game/Gateway/Materials/M_Panel.M_Panel"));
 	if (PanelMat.Succeeded()) { Backdrop->SetMaterial(0, PanelMat.Object); }
+
+	// Rectangulo de seleccion: mismo plano, medio centimetro delante del fondo y detras del texto
+	Highlight = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Highlight"));
+	Highlight->SetupAttachment(Root);
+	if (Plane.Succeeded()) { Highlight->SetStaticMesh(Plane.Object); }
+	Highlight->SetRelativeRotation(FRotator(90.f, 0.f, 0.f));
+	Highlight->SetRelativeLocation(FVector(-0.5f, 0.f, 0.f));
+	Highlight->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	Highlight->SetCastShadow(false);
+	Highlight->SetVisibility(false);
+	if (PanelMat.Succeeded()) { Highlight->SetMaterial(0, PanelMat.Object); }
 
 	Light = CreateDefaultSubobject<UPointLightComponent>(TEXT("Light"));
 	Light->SetupAttachment(Root);
@@ -56,17 +67,35 @@ AGatewayVRPanel::AGatewayVRPanel()
 	Light->SetMobility(EComponentMobility::Movable);
 
 	// Textos (x = -1 cm delante del panel; y = horizontal; z = vertical)
-	Title = MakeText(this, Root, TEXT("Title"), 9.f, FVector(-1.f, 0.f, 58.f), EHTA_Center, FColor(255, 220, 140));
-	Body = MakeText(this, Root, TEXT("Body"), 4.6f, FVector(-1.f, -104.f, 42.f), EHTA_Left, FColor(235, 235, 250));
-	Detail = MakeText(this, Root, TEXT("Detail"), 4.0f, FVector(-1.f, 8.f, 42.f), EHTA_Left, FColor(200, 205, 230));
-	Footer = MakeText(this, Root, TEXT("Footer"), 3.6f, FVector(-1.f, 0.f, -54.f), EHTA_Center, FColor(150, 160, 190));
+	Title = MakeText(this, Root, TEXT("Title"), 9.f, FVector(-1.f, 0.f, 70.f), EHTA_Center, FColor(255, 220, 140));
+	Body = MakeText(this, Root, TEXT("Body"), 4.6f, FVector(-1.f, BodyY, BodyTop), EHTA_Left, FColor(235, 235, 250));
+	Detail = MakeText(this, Root, TEXT("Detail"), 4.0f, FVector(-1.f, 8.f, BodyTop), EHTA_Left, FColor(200, 205, 230));
+	Footer = MakeText(this, Root, TEXT("Footer"), 3.6f, FVector(-1.f, 0.f, -64.f), EHTA_Center, FColor(150, 160, 190));
 	Overlay = MakeText(this, Root, TEXT("Overlay"), 4.5f, FVector(-1.f, 0.f, 95.f), EHTA_Center, FColor(220, 220, 240));
 }
 
 void AGatewayVRPanel::BeginPlay()
 {
 	Super::BeginPlay();
+	if (UMaterialInterface* M = Highlight->GetMaterial(0))
+	{
+		HighlightMID = UMaterialInstanceDynamic::Create(M, this);
+		HighlightMID->SetVectorParameterValue(TEXT("Color"), FLinearColor(0.16f, 0.26f, 0.70f));
+		HighlightMID->SetScalarParameterValue(TEXT("Opacity"), 0.9f);
+		Highlight->SetMaterial(0, HighlightMID);
+	}
 	Recenter();
+}
+
+// Coloca el rectangulo detras de la fila Row (0 = primera linea del cuerpo). Row < 0 lo oculta.
+void AGatewayVRPanel::PlaceHighlight(int32 Row, int32 TotalLines, float Width)
+{
+	if (TotalLines > 0) { const float H = Body->GetTextLocalSize().Z / TotalLines; if (H > 0.f) { LineH = H; } }  // alto real de una linea
+	if (Row < 0 || TotalLines <= 0 || LineH <= 0.f) { Highlight->SetVisibility(false); return; }
+	const float Zc = BodyTop - (Row + 0.5f) * LineH;
+	Highlight->SetRelativeLocation(FVector(-0.5f, BodyY + Width * 0.5f, Zc));
+	Highlight->SetRelativeScale3D(FVector(LineH * 1.05f / 100.f, Width / 100.f, 1.f));
+	Highlight->SetVisibility(PanelAlpha > 0.02f);
 }
 
 void AGatewayVRPanel::Recenter()
@@ -124,6 +153,8 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 	SetVisibleSmooth(bMenuState, DeltaSeconds);
 
 	FString T, B, Dt2, Ft, Ov;
+	int32 HiRow = -1;          // fila del cuerpo a resaltar
+	float HiWidth = 108.f;     // ancho del rectangulo (mitad izquierda del panel por defecto)
 	const TArray<FGatewaySessionDef>& S = D->GetSessions();
 	switch (St)
 	{
@@ -131,16 +162,24 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 	{
 		T = TEXT("G A T E W A Y");
 		const int32 Sel = D->GetMenuIndex();
-		const int32 First = FMath::Max(0, Sel - 8);
+		// Lista completa de filas (cabeceras de onda + sesiones) y fila de la seleccion
+		TArray<FString> Lines; TArray<bool> IsHeader; int32 SelRow = 0;
 		FString LastWave;
-		int32 Rows = 0;
-		for (int32 i = First; i < S.Num() && Rows < 14; ++i)
+		for (int32 i = 0; i < S.Num(); ++i)
 		{
-			if (S[i].Wave != LastWave) { LastWave = S[i].Wave; B += FString::Printf(TEXT("<%s>\n"), *LastWave); ++Rows; }
+			if (S[i].Wave != LastWave) { LastWave = S[i].Wave; Lines.Add(FString::Printf(TEXT("<%s>"), *LastWave)); IsHeader.Add(true); }
+			if (i == Sel) { SelRow = Lines.Num(); }
 			const bool bDone = D->GetCompleted().Contains(S[i].Id);
-			B += FString::Printf(TEXT("%s %s%2d. %s   %d min\n"), i == Sel ? TEXT(">") : TEXT(" "), bDone ? TEXT("*") : TEXT(" "), S[i].Order, *S[i].Title, int32(S[i].TotalSeconds / 60.f));
-			++Rows;
+			Lines.Add(FString::Printf(TEXT("  %s%2d. %s   %d min"), bDone ? TEXT("*") : TEXT(" "), S[i].Order, *S[i].Title, int32(S[i].TotalSeconds / 60.f)));
+			IsHeader.Add(false);
 		}
+		// Scroll: la seleccion siempre visible; al subir se arrastra tambien la cabecera de su onda
+		const int32 MenuRows = VisibleRows();
+		if (SelRow < MenuFirst) { MenuFirst = (SelRow > 0 && IsHeader[SelRow - 1]) ? SelRow - 1 : SelRow; }
+		if (SelRow >= MenuFirst + MenuRows) { MenuFirst = SelRow - MenuRows + 1; }
+		MenuFirst = FMath::Clamp(MenuFirst, 0, FMath::Max(0, Lines.Num() - MenuRows));
+		for (int32 r = MenuFirst; r < Lines.Num() && r < MenuFirst + MenuRows; ++r) { B += Lines[r] + TEXT("\n"); }
+		HiRow = SelRow - MenuFirst;
 		if (S.IsValidIndex(Sel))
 		{
 			Dt2 = Wrap(S[Sel].Title + TEXT("\n") + S[Sel].Wave + TEXT("\n\n") + S[Sel].Description, 44);
@@ -168,7 +207,8 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 			FString::Printf(TEXT("Pantalla completa (escritorio) %s"), Sg.bFullscreen ? TEXT("si") : TEXT("no")),
 			FString::Printf(TEXT("Salida de audio: %s"), D->GetDevices() ? *D->GetDevices()->CurrentName() : TEXT("")),
 		};
-		for (int32 i = 0; i < 6; ++i) { B += FString::Printf(TEXT("%s %s\n"), i == Sel ? TEXT(">") : TEXT(" "), *Rows[i]); }
+		for (int32 i = 0; i < 6; ++i) { B += TEXT("  ") + Rows[i] + TEXT("\n"); }
+		HiRow = Sel; HiWidth = 200.f;
 		Ft = TEXT("Stick der arriba/abajo: elegir   izq/der: ajustar   A: entrar   B: volver");
 		break;
 	}
@@ -182,8 +222,9 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 			for (int32 i = 0; i < Dev->GetDevices().Num(); ++i)
 			{
 				const FAudioOutputDeviceInfo& I = Dev->GetDevices()[i];
-				B += FString::Printf(TEXT("%s %s%s\n"), i == Sel ? TEXT(">") : TEXT(" "), *I.Name, I.bIsCurrentDevice ? TEXT("  (actual)") : TEXT(""));
+				B += FString::Printf(TEXT("  %s%s\n"), *I.Name, I.bIsCurrentDevice ? TEXT("  (actual)") : TEXT(""));
 			}
+			HiRow = Sel;
 		}
 		Dt2 = Wrap(TEXT("Elige los AirPods en su perfil ESTEREO (Headphones / Stereo). El perfil Hands-Free es mono y anula el efecto binaural."), 44);
 		Ft = TEXT("A: usar esta salida      B: volver");
@@ -216,6 +257,10 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 	if (Dt2 != LastDetail) { Detail->SetText(FText::FromString(Dt2)); LastDetail = Dt2; }
 	if (Ft != LastFooter) { Footer->SetText(FText::FromString(Ft)); LastFooter = Ft; }
 	if (Ov != LastOverlay) { Overlay->SetText(FText::FromString(Ov)); LastOverlay = Ov; }
+
+	int32 BodyLines = 0;
+	for (const TCHAR C : B) { if (C == TEXT('\n')) ++BodyLines; }
+	PlaceHighlight(bMenuState ? HiRow : -1, BodyLines, HiWidth);
 
 	// El overlay de sesion sigue la mirada suavemente (arriba del campo visual)
 	if (St == EGatewayState::Running && !Ov.IsEmpty())
