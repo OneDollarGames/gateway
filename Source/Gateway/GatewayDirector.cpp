@@ -332,9 +332,11 @@ void AGatewayDirector::ApplySegment(int32 Index)
 	if (Seg.bChime) { Synth->PlayChime(Seg.ChimeHz, 3.f, Seg.ChimeGain); }
 	if (!Seg.Voice.IsEmpty())
 	{
-		// La sesion 17 usa "../Audio/...": el .pak de Android no resuelve ".." y hay que colapsarlo
-		FString Path = FPaths::Combine(UGatewaySessionLibrary::VoiceDir(), Seg.Voice);
-		FPaths::CollapseRelativeDirectories(Path);
+		// La sesion 17 usa "../Audio/...": el .pak de Android no resuelve ".." (y CollapseRelativeDirectories
+		// falla con la raiz "../../../" del juego empaquetado), asi que se cuelga de Content/Gateway a mano
+		const FString Path = Seg.Voice.StartsWith(TEXT("../"))
+			? FPaths::Combine(UGatewaySessionLibrary::ContentDir(), Seg.Voice.Mid(3))
+			: FPaths::Combine(UGatewaySessionLibrary::VoiceDir(), Seg.Voice);
 		const float Len = Synth->PlayVoice(Path, Seg.VoiceGain);
 		if (Len < 0.f) { StatusLine = FString::Printf(TEXT("Falta la voz %s"), *Seg.Voice); }
 	}
