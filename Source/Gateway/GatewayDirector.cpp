@@ -332,7 +332,9 @@ void AGatewayDirector::ApplySegment(int32 Index)
 	if (Seg.bChime) { Synth->PlayChime(Seg.ChimeHz, 3.f, Seg.ChimeGain); }
 	if (!Seg.Voice.IsEmpty())
 	{
-		const FString Path = FPaths::Combine(UGatewaySessionLibrary::VoiceDir(), Seg.Voice);
+		// La sesion 17 usa "../Audio/...": el .pak de Android no resuelve ".." y hay que colapsarlo
+		FString Path = FPaths::Combine(UGatewaySessionLibrary::VoiceDir(), Seg.Voice);
+		FPaths::CollapseRelativeDirectories(Path);
 		const float Len = Synth->PlayVoice(Path, Seg.VoiceGain);
 		if (Len < 0.f) { StatusLine = FString::Printf(TEXT("Falta la voz %s"), *Seg.Voice); }
 	}
