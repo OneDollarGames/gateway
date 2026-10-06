@@ -310,6 +310,9 @@ void AGatewayStage::Tick(float DeltaSeconds)
 
 	FadeNow = FMath::FInterpConstantTo(FadeNow, FadeTarget, Dt, FadeSpeed);
 	GuideNow = FMath::FInterpTo(GuideNow, bGuide ? 1.f : 0.f, Dt, 2.f);
+	BlackoutNow = FMath::FInterpConstantTo(BlackoutNow, bBlackout ? 1.f : 0.f, Dt, 0.5f);
+	if (Particles) { const bool bShowP = BlackoutNow < 0.99f; if (Particles->IsVisible() != bShowP) { Particles->SetVisibility(bShowP); } }
+	if (PropLight) { const bool bShowL = BlackoutNow < 0.99f; if (PropLight->IsVisible() != bShowL) { PropLight->SetVisibility(bShowL); } }
 	UpdateParticles(Dt);
 
 	ApplyParams();
@@ -336,7 +339,7 @@ void AGatewayStage::ApplyParams()
 		DomeMID->SetScalarParameterValue(TEXT("FlickerDepth"), bDomeFX ? FlickerNow.Depth * FlickerUserScale : 0.f);
 		DomeMID->SetScalarParameterValue(TEXT("FlickerShape"), FlickerNow.Shape);
 		DomeMID->SetVectorParameterValue(TEXT("FlickerColor"), FlickerNow.Color);
-		DomeMID->SetScalarParameterValue(TEXT("Fade"), bDomeFX ? FadeNow : 0.f);
+		DomeMID->SetScalarParameterValue(TEXT("Fade"), bDomeFX ? FMath::Max(FadeNow, BlackoutNow) : 0.f);
 		DomeMID->SetVectorParameterValue(TEXT("ViewForward"), FLinearColor(ViewForward.X, ViewForward.Y, ViewForward.Z, 0.f));
 		if (CurA.Image || BlackTex) { DomeMID->SetTextureParameterValue(TEXT("ImageA"), CurA.Image ? CurA.Image : BlackTex); }
 		if (CurB.Image || BlackTex) { DomeMID->SetTextureParameterValue(TEXT("ImageB"), CurB.Image ? CurB.Image : BlackTex); }
@@ -347,7 +350,7 @@ void AGatewayStage::ApplyParams()
 		PostMID->SetScalarParameterValue(TEXT("FlickerDepth"), FlickerNow.Depth * FlickerUserScale);
 		PostMID->SetScalarParameterValue(TEXT("FlickerShape"), FlickerNow.Shape);
 		PostMID->SetVectorParameterValue(TEXT("FlickerColor"), FlickerNow.Color);
-		PostMID->SetScalarParameterValue(TEXT("Fade"), FadeNow);
+		PostMID->SetScalarParameterValue(TEXT("Fade"), FMath::Max(FadeNow, BlackoutNow));
 		PostMID->SetScalarParameterValue(TEXT("SceneTime"), SceneTime);
 		PostMID->SetScalarParameterValue(TEXT("Breath"), BreathNow);
 	}

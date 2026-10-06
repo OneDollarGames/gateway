@@ -1,4 +1,5 @@
 ﻿#include "GatewayDirector.h"
+#include "GatewayPlatform.h"
 #include "Gateway.h"
 #include "GatewaySynth.h"
 #include "GatewayStage.h"
@@ -137,7 +138,7 @@ void AGatewayDirector::MenuMove(int32 Delta)
 		if (Sessions.Num() > 0) { MenuIndex = (MenuIndex + Delta + Sessions.Num()) % Sessions.Num(); }
 		break;
 	case EGatewayState::Settings:
-		SettingsIndex = (SettingsIndex + Delta + 6) % 6;
+		SettingsIndex = (SettingsIndex + Delta + GatewaySettingsRows) % GatewaySettingsRows;
 		break;
 	case EGatewayState::Devices:
 	{
@@ -159,8 +160,9 @@ void AGatewayDirector::MenuAdjust(int32 Delta)
 	case 1: Settings.VolTones = FMath::Clamp(Settings.VolTones + Step, 0.f, 1.f); break;
 	case 2: Settings.VolVoices = FMath::Clamp(Settings.VolVoices + Step, 0.f, 1.5f); break;
 	case 3: Settings.VolNoise = FMath::Clamp(Settings.VolNoise + Step, 0.f, 1.f); break;
-	case 4: Settings.bFullscreen = !Settings.bFullscreen; ToggleFullscreen(); break;
-	case 5: break; // dispositivos (Enter)
+	case 4: SetAudioOnly(!Settings.bAudioOnly); break;
+	case 5: Settings.bFullscreen = !Settings.bFullscreen; ToggleFullscreen(); break;
+	case 6: break; // dispositivos (Enter)
 	}
 	ApplyUserGains();
 	SaveSettings();
@@ -177,8 +179,8 @@ void AGatewayDirector::MenuConfirm()
 		AcceptWarning();
 		break;
 	case EGatewayState::Settings:
-		if (SettingsIndex == 5) { OpenDevices(); }
-		else if (SettingsIndex == 4) { MenuAdjust(1); }
+		if (SettingsIndex == 6) { OpenDevices(); }
+		else if (SettingsIndex == 4 || SettingsIndex == 5) { MenuAdjust(1); }
 		break;
 	case EGatewayState::Devices:
 		if (Devices && Devices->GetDevices().IsValidIndex(DeviceIndex))
@@ -253,6 +255,7 @@ void AGatewayDirector::StartSession(int32 Index)
 	ShowOverlay(10.f);
 	Stage->SetFade(0.f, 2.f);
 	Synth->SetPaused(false);
+	if (Settings.bAudioOnly) { SetAudioOnly(true); }
 	UE_LOG(LogGateway, Log, TEXT("Sesion iniciada: %s (%.0f s, %d segmentos)"), *S.Title, S.TotalSeconds, S.Segments.Num());
 }
 
@@ -286,6 +289,7 @@ void AGatewayDirector::FinishSession(bool bCompleted)
 		}
 	}
 	bPaused = false;
+	if (bAudioOnlyActive) { bAudioOnlyActive = false; Stage->SetBlackout(false); GatewayPlatform::SetKeepAwake(false); }
 	Synth->SetPaused(false);
 	Stage->SetPaused(false);
 	Stage->SetGuide(false);
@@ -450,4 +454,29 @@ void AGatewayDirector::SaveSettings()
 	{
 		FFileHelper::SaveStringToFile(Text, *SettingsPath());
 	}
+}
+
+// ---------------- audio libre ----------------
+
+void AGatewayDirector::SetAudioOnly(bool bOn)
+{
+	Settings.bAudioOnly = bOn;
+	SaveSettings();
+	const bool bActive = bOn && State == EGatewayState::Running;
+	if (bActive != bAudioOnlyActive)
+	{
+		bAudioOnlyActive = bActive;
+		Stage->SetBlackout(bActive);
+		GatewayPlatform::SetKeepAwake(bActive);
+		if (bActive) { bShowOverlay = false; }
+	}
+	StatusLine = bOn ? TEXT("Audio libre: la sesion seguira a oscuras; cualquier boton enciende la imagen") : TEXT("Audio libre desactivado");
+}
+
+bool AGatewayDirector::ConsumeAudioOnly()
+{
+	if (!bAudioOnlyActive) return false;
+	SetAudioOnly(false);
+	ShowOverlay(6.f);
+	return true;
 }

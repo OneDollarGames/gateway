@@ -37,6 +37,7 @@ Sigue el orden. Cada sesión se apoya en la anterior; repite una sesión los dí
 | 2 | Introducción a Focus 10 | 32 min | Relajación de diez puntos, "mente despierta, cuerpo dormido", anclas, afirmación de salud, retorno 10→1 |
 | 3 | Focus 10 avanzado | 30 min | REBAL (globo de energía) y entradas/salidas repetidas de Focus 10 |
 | 4 | Liberar y recargar | 27 min | Ejercicio diario: sacar un miedo de la caja, soltar la carga, recargar |
+| 4.1 | Exploración personalizada | 53 min | Preparación y Focus 10 de la sesión 3 (hasta "Explora") seguidos de la exploración del sueño de la 5 (desde "Rueda"), sin retorno; termina dormido |
 | 5 | Exploración del sueño | 41 min | Rodar, flotar, conteo 11-20 y procesador de sueño theta→delta (termina dormido) |
 | 6 | Flujo libre 10 | 33 min | Propósito propio, silencio largo |
 | 7 | Introducción a Focus 12 | 35 min | Señales de Focus 12 (alfa 10 Hz), túnel y mandala; flicker opcional 8 Hz |
@@ -66,6 +67,10 @@ Sugerencia de calendario: semana 1-2 sesiones 1-4 (la 4 a diario), semana 3 sesi
 - Laboratorio: theta 250[6] isocrónico 45 %; alfa 250[10] isocrónico 50 % para el flicker
 
 Fuentes y evidencia: `docs/01_gateway_monroe.md` y `docs/02_evidencia_cientifica.md`.
+
+## Audio libre (dormir sin el visor)
+
+En **Ajustes → Activar audio libre** la sesión arranca a oscuras: solo suena el audio (AirPods o el altavoz del visor) y la imagen, las partículas y los textos se apagan para que puedas quitarte el visor y dormir (sesiones 4.1, 5, 14 y 16). Cualquier botón vuelve a encender la imagen y desactiva la opción. En el Quest la app además pide no suspender la pantalla e intenta ignorar el sensor de proximidad; si el visor se durmiera igualmente al quitártelo, en el propio visor: **Ajustes → Sistema → Energía → Suspensión automática del visor: 4 horas** (o nunca).
 
 ## Seguridad
 

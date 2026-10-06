@@ -322,6 +322,26 @@ SESIONES.append(sesion("exploracion_sueno", "Exploración del sueño", ONDA1, 5,
         seg("Silencio", None, duracion=120, sonido="nada", visual="negro", rampa=120),
     ], dormir=True))
 
+# 4.1 Exploracion personalizada ------------------------------------------------------------------
+# Pedida por el usuario: la preparacion y la entrada a Focus 10 de la sesion 3 (hasta "Explora")
+# seguidas de la exploracion del sueno de la sesion 5 (desde "Rueda" hasta el final, termina dormido).
+def exploracion_personalizada():
+    def trozo(sid, desde, hasta):
+        src = next(x for x in SESIONES if x["id"] == sid)
+        nombres = [g["nombre"] for g in src["segmentos"]]
+        i0 = nombres.index(desde); i1 = nombres.index(hasta)
+        out = []
+        for g in src["segmentos"][i0:i1 + 1]:
+            g = dict(g); g["escala"] = src["escala"]  # conserva los tiempos de su sesion de origen
+            out.append(g)
+        return out
+    return trozo("f10_avanzado", "Acomódate", "Explora") + trozo("exploracion_sueno", "Rueda", "Silencio")
+
+SESIONES.append(sesion("exploracion_personalizada", "Exploración personalizada", ONDA1, 4.1,
+    "Combinación a medida: la preparación completa y la entrada a Focus 10 de la sesión 3 (caja, sintonía resonante, REBAL, afirmación, Focus 10 y exploración) "
+    "y, sin retorno, la exploración del sueño de la sesión 5: rodar, flotar, el conteo del once al veinte y el procesador de sueño theta-delta. Termina dormido.",
+    exploracion_personalizada(), dormir=True))
+
 # 6 Flujo libre 10 ------------------------------------------------------------------------------
 SESIONES.append(sesion("flujo_libre_10", "Flujo libre 10", ONDA1, 6,
     "Mínima guía: entras a Focus 10 con un propósito propio y exploras en silencio largo, con las señales Hemi-Sync de fondo. Cierra la Onda I. Unos 35 minutos.",
@@ -542,6 +562,15 @@ def tts(texto, ruta):
     """Sintetiza `texto` a `ruta` (WAV). Devuelve la duracion en segundos."""
     import soundfile as sf
     if not os.path.exists(ruta):
+        # mismo texto ya sintetizado para otra sesion: se copia en vez de pedirlo otra vez
+        import glob, shutil
+        h = os.path.basename(ruta).split("_")[-1]
+        for otra in glob.glob(os.path.join(VOICE_DIR, "*", "*_" + h)):
+            os.makedirs(os.path.dirname(ruta), exist_ok=True)
+            shutil.copyfile(otra, ruta)
+            print("   copia %s <- %s" % (os.path.basename(ruta), os.path.relpath(otra, VOICE_DIR)))
+            break
+    if not os.path.exists(ruta):
         if DRY:
             return max(1.5, len(texto) * 0.075)
         from openai import OpenAI
@@ -572,7 +601,7 @@ def compilar(s):
             rel = "%s/%02d_%s.wav" % (sid, i + 1, h)
             dur_voz = tts(g["texto"], os.path.join(VOICE_DIR, rel))
             voz = rel
-        dur = g["duracion"] if g["duracion"] is not None else dur_voz + g["pausa"] * s["escala"]
+        dur = g["duracion"] if g["duracion"] is not None else dur_voz + g["pausa"] * g.get("escala", s["escala"])
         o = {"nombre": g["nombre"], "inicio": round(t, 2), "duracion": round(dur, 2), "rampa": g["rampa"]}
         if voz:
             o["voz"] = voz
@@ -596,7 +625,8 @@ def compilar(s):
     out = {"id": sid, "titulo": s["titulo"], "onda": s["onda"], "orden": s["orden"], "descripcion": s["descripcion"], "requiere": s["requiere"],
            "dormir": s["dormir"], "nocturna": s["nocturna"], "duracion_total": round(t, 2), "segmentos": segs_out}
     os.makedirs(SESS_DIR, exist_ok=True)
-    ruta = os.path.join(SESS_DIR, "%02d_%s.json" % (s["orden"], sid))
+    orden_txt = ("%02d" % s["orden"]) if float(s["orden"]).is_integer() else ("%04.1f" % s["orden"])
+    ruta = os.path.join(SESS_DIR, "%s_%s.json" % (orden_txt, sid))
     with open(ruta, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print("   -> %s  (%d:%02d, %d segmentos)" % (os.path.basename(ruta), int(t // 60), int(t % 60), len(segs_out)))

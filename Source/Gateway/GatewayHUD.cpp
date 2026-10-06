@@ -209,7 +209,7 @@ void AGatewayHUD::DrawMenu(AGatewayDirector* D)
 		AddHitBox(FVector2D(ListX + 8.f, Y - 4.f), FVector2D(ListW - 16.f, RowH), Id, true, 0);
 		const FString Mark = bDone ? TEXT("*") : (bReady ? TEXT("o") : TEXT("-"));
 		Text(Mark, ListX + 24.f, Y, bDone ? ColOk : (bReady ? ColDim : FLinearColor(0.4f, 0.4f, 0.5f)), FontMed, 1.f);
-		Text(FString::Printf(TEXT("%2d.  %s"), Def.Order, *Def.Title), ListX + 52.f, Y, bSel ? ColText : (bReady ? ColText : ColDim), FontMed, 1.f);
+		Text(FString::Printf(TEXT("%s.  %s"), *Def.OrderText(), *Def.Title), ListX + 52.f, Y, bSel ? ColText : (bReady ? ColText : ColDim), FontMed, 1.f);
 		const FString Dur = Clock(Def.TotalSeconds) + (Def.bNight ? TEXT("  noche") : (Def.bSleep ? TEXT("  dormir") : TEXT("")));
 		float DW, DH; GetTextSize(Dur, DW, DH, FontSmall, 1.f);
 		Text(Dur, ListX + ListW - 24.f - DW, Y + 3.f, ColDim, FontSmall, 1.f);
@@ -280,16 +280,17 @@ void AGatewayHUD::DrawSettings(AGatewayDirector* D)
 	Y += TextCentered(TEXT("Ajustes"), W * 0.5f, Y, ColGold, FontBig, 1.4f) + 24.f;
 	const FGatewaySettings& S = D->GetSettings();
 	struct FRow { FString Name; FString Value; float Bar; };
-	const FRow Rows[6] = {
+	const FRow Rows[GatewaySettingsRows] = {
 		{ TEXT("Intensidad del flicker (luz intermitente)"), FString::Printf(TEXT("%d %%"), int32(S.FlickerScale * 100.f + 0.5f)), S.FlickerScale },
 		{ TEXT("Volumen de tonos Hemi-Sync"), FString::Printf(TEXT("%d %%"), int32(S.VolTones * 100.f + 0.5f)), S.VolTones },
 		{ TEXT("Volumen de la voz guía"), FString::Printf(TEXT("%d %%"), int32(S.VolVoices * 100.f + 0.5f)), S.VolVoices / 1.5f },
 		{ TEXT("Volumen de ruido / ambiente"), FString::Printf(TEXT("%d %%"), int32(S.VolNoise * 100.f + 0.5f)), S.VolNoise },
+		{ TEXT("Activar audio libre (sesión a oscuras, visor quitado)"), S.bAudioOnly ? TEXT("sí") : TEXT("no"), -1.f },
 		{ TEXT("Pantalla completa"), S.bFullscreen ? TEXT("sí") : TEXT("no"), -1.f },
 		{ TEXT("Salida de audio"), D->GetDevices() ? D->GetDevices()->CurrentName() : TEXT(""), -1.f },
 	};
 	const int32 Sel = D->GetSettingsIndex();
-	for (int32 i = 0; i < 6; ++i)
+	for (int32 i = 0; i < GatewaySettingsRows; ++i)
 	{
 		const bool bSel = (i == Sel);
 		const FName Id(*FString::Printf(TEXT("set_%d"), i));
@@ -371,7 +372,7 @@ void AGatewayHUD::DrawRunning(AGatewayDirector* D)
 
 	// Fundido del overlay de textos
 	const float Dt = GetWorld()->GetDeltaSeconds();
-	const float Target = (D->bShowOverlay || D->IsPaused()) ? 1.f : 0.f;
+	const float Target = ((D->bShowOverlay || D->IsPaused()) && !D->IsAudioOnlyActive()) ? 1.f : 0.f;
 	OverlayAlpha = FMath::FInterpTo(OverlayAlpha, Target, Dt, 2.f);
 
 	if (D->IsBreathGuideVisible())

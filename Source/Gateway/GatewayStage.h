@@ -32,6 +32,9 @@ public:
 	void SetBreath(float Phase01, bool bActive);
 	// Fundido a negro (1 = negro)
 	void SetFade(float Target, float Seconds);
+	// Audio libre: todo negro (domo, particulas, cofre) sin tocar el fundido de la sesion
+	void SetBlackout(bool bOn) { bBlackout = bOn; }
+	bool IsBlackout() const { return bBlackout; }
 	// Escala de usuario para el flicker (ajustes de seguridad) 0..1
 	void SetFlickerUserScale(float S) { FlickerUserScale = S; }
 	void SetPaused(bool bInPaused) { bPaused = bInPaused; }
@@ -71,6 +74,7 @@ private:
 	float SceneTime = 0.f; bool bPaused = false;
 	FVector ViewForward = FVector::ForwardVector;
 	bool bGuide = false; float GuideNow = 0.f;
+	bool bBlackout = false; float BlackoutNow = 0.f;
 
 	UTexture2D* LoadImage(const FString& Name);
 	void ApplyParams();

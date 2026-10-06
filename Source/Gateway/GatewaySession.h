@@ -77,7 +77,8 @@ struct FGatewaySessionDef
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Id;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Title;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Wave;          // "Onda I - Descubrimiento", ...
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Order = 0;       // orden global del programa
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) float Order = 0.f;     // orden global del programa (admite 4.1)
+	FString OrderText() const { return FMath::IsNearlyEqual(Order, FMath::RoundToFloat(Order)) ? FString::Printf(TEXT("%2d"), int32(Order)) : FString::Printf(TEXT("%.1f"), Order); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Description;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Requires;      // id de sesion recomendada antes
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) float TotalSeconds = 0.f;

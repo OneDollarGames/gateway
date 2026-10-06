@@ -13,7 +13,14 @@ public class Gateway : ModuleRules
 			"Json", "JsonUtilities",
 			"RenderCore", "RHI",
 			"Slate", "SlateCore",
-			"HeadMountedDisplay", "XRBase"
+			"HeadMountedDisplay", "XRBase",
+			"ApplicationCore"
 		});
+
+		if (Target.Platform == UnrealTargetPlatform.Android)
+		{
+			// FJavaWrapper (AndroidJNI.h) para la difusion que ignora el sensor de proximidad en modo audio libre
+			PrivateDependencyModuleNames.Add("Launch");
+		}
 	}
 }

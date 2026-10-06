@@ -73,18 +73,21 @@ void AGatewayPawn::SetupPlayerInputComponent(UInputComponent* In)
 	}
 }
 
-void AGatewayPawn::VrA() { if (AGatewayDirector* D = Director()) { if (D->GetState() == EGatewayState::Running) D->TogglePause(); else D->MenuConfirm(); } }
-void AGatewayPawn::VrB() { if (AGatewayDirector* D = Director()) D->MenuBack(); }
+// En audio libre el primer boton solo enciende la imagen (ConsumeAudioOnly) y no hace nada mas
+void AGatewayPawn::VrA() { if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; if (D->GetState() == EGatewayState::Running) D->TogglePause(); else D->MenuConfirm(); } }
+void AGatewayPawn::VrB() { if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; D->MenuBack(); } }
 void AGatewayPawn::VrX()
 {
 	if (AGatewayDirector* D = Director())
 	{
+		if (D->ConsumeAudioOnly()) return;
 		if (D->GetState() == EGatewayState::Running) D->TogglePause();
 		else if (D->GetState() == EGatewayState::Menu) D->OpenSettings();
 	}
 }
 void AGatewayPawn::VrY()
 {
+	if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; }
 	for (TActorIterator<AGatewayVRPanel> It(GetWorld()); It; ++It) { It->Recenter(); }
 	if (bVR) { UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition(); }
 	if (AGatewayDirector* D = Director()) { D->ShowOverlay(6.f); }
@@ -93,8 +96,8 @@ void AGatewayPawn::VrStickUp() { KeyUp(); }
 void AGatewayPawn::VrStickDown() { KeyDown(); }
 void AGatewayPawn::VrStickLeft() { KeyLeft(); }
 void AGatewayPawn::VrStickRight() { if (AGatewayDirector* D = Director()) { if (D->GetState() != EGatewayState::Running) D->MenuAdjust(1); } }
-void AGatewayPawn::VrSkip() { if (AGatewayDirector* D = Director()) { if (D->GetState() == EGatewayState::Running) D->SkipSegment(); else D->MenuAdjust(1); } }
-void AGatewayPawn::VrMenu() { if (AGatewayDirector* D = Director()) { if (D->GetState() == EGatewayState::Running) D->TogglePause(); else { D->bShowHelp = !D->bShowHelp; } } }
+void AGatewayPawn::VrSkip() { if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; if (D->GetState() == EGatewayState::Running) D->SkipSegment(); else D->MenuAdjust(1); } }
+void AGatewayPawn::VrMenu() { if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; if (D->GetState() == EGatewayState::Running) D->TogglePause(); else { D->bShowHelp = !D->bShowHelp; } } }
 
 void AGatewayPawn::LookX(float V)
 {
@@ -150,12 +153,13 @@ void AGatewayPawn::KeyRight()
 		if (D->GetState() == EGatewayState::Running) D->SkipSegment(); else D->MenuAdjust(1);
 	}
 }
-void AGatewayPawn::KeyEnter() { if (AGatewayDirector* D = Director()) D->MenuConfirm(); }
-void AGatewayPawn::KeyEscape() { if (AGatewayDirector* D = Director()) D->MenuBack(); }
+void AGatewayPawn::KeyEnter() { if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; D->MenuConfirm(); } }
+void AGatewayPawn::KeyEscape() { if (AGatewayDirector* D = Director()) { if (D->ConsumeAudioOnly()) return; D->MenuBack(); } }
 void AGatewayPawn::KeySpace()
 {
 	if (AGatewayDirector* D = Director())
 	{
+		if (D->ConsumeAudioOnly()) return;
 		if (D->GetState() == EGatewayState::Running) D->TogglePause(); else D->MenuConfirm();
 	}
 }

@@ -68,7 +68,7 @@ AGatewayVRPanel::AGatewayVRPanel()
 
 	// Textos (x = -1 cm delante del panel; y = horizontal; z = vertical)
 	Title = MakeText(this, Root, TEXT("Title"), 9.f, FVector(-1.f, 0.f, 70.f), EHTA_Center, FColor(255, 220, 140));
-	Body = MakeText(this, Root, TEXT("Body"), 4.6f, FVector(-1.f, BodyY, BodyTop), EHTA_Left, FColor(235, 235, 250));
+	Body = MakeText(this, Root, TEXT("Body"), 4.35f, FVector(-1.f, BodyY, BodyTop), EHTA_Left, FColor(235, 235, 250));
 	Detail = MakeText(this, Root, TEXT("Detail"), 4.0f, FVector(-1.f, 8.f, BodyTop), EHTA_Left, FColor(200, 205, 230));
 	Footer = MakeText(this, Root, TEXT("Footer"), 3.6f, FVector(-1.f, 0.f, -64.f), EHTA_Center, FColor(150, 160, 190));
 	Overlay = MakeText(this, Root, TEXT("Overlay"), 4.5f, FVector(-1.f, 0.f, 95.f), EHTA_Center, FColor(220, 220, 240));
@@ -126,7 +126,7 @@ FString AGatewayVRPanel::Wrap(const FString& S, int32 MaxChars)
 			if (Line.Len() + W.Len() + 1 > MaxChars && !Line.IsEmpty()) { Out += Line + TEXT("\n"); Line = W; }
 			else { Line = Line.IsEmpty() ? W : Line + TEXT(" ") + W; }
 		}
-		Out += Line + TEXT("\n");
+		Out += (Line.IsEmpty() ? TEXT(" ") : Line) + TEXT("\n");  // una linea vacia se dibuja altisima en TextRender: va un espacio
 	}
 	return Out;
 }
@@ -170,7 +170,7 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 			if (S[i].Wave != LastWave) { LastWave = S[i].Wave; Lines.Add(FString::Printf(TEXT("<%s>"), *LastWave)); IsHeader.Add(true); }
 			if (i == Sel) { SelRow = Lines.Num(); }
 			const bool bDone = D->GetCompleted().Contains(S[i].Id);
-			Lines.Add(FString::Printf(TEXT("  %s%2d. %s   %d min"), bDone ? TEXT("*") : TEXT(" "), S[i].Order, *S[i].Title, int32(S[i].TotalSeconds / 60.f)));
+			Lines.Add(FString::Printf(TEXT("  %s%s. %s   %d min"), bDone ? TEXT("*") : TEXT(" "), *S[i].OrderText(), *S[i].Title, int32(S[i].TotalSeconds / 60.f)));
 			IsHeader.Add(false);
 		}
 		// Scroll: la seleccion siempre visible; al subir se arrastra tambien la cabecera de su onda
@@ -199,16 +199,21 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 		T = TEXT("Ajustes");
 		const FGatewaySettings& Sg = D->GetSettings();
 		const int32 Sel = D->GetSettingsIndex();
-		const FString Rows[6] = {
+		const FString Rows[GatewaySettingsRows] = {
 			FString::Printf(TEXT("Intensidad del flicker        %3d %%"), int32(Sg.FlickerScale * 100 + 0.5f)),
 			FString::Printf(TEXT("Volumen tonos Hemi-Sync       %3d %%"), int32(Sg.VolTones * 100 + 0.5f)),
 			FString::Printf(TEXT("Volumen voz guia              %3d %%"), int32(Sg.VolVoices * 100 + 0.5f)),
 			FString::Printf(TEXT("Volumen ruido / ambiente      %3d %%"), int32(Sg.VolNoise * 100 + 0.5f)),
+			FString::Printf(TEXT("Activar audio libre (visor quitado)   %s"), Sg.bAudioOnly ? TEXT("si") : TEXT("no")),
 			FString::Printf(TEXT("Pantalla completa (escritorio) %s"), Sg.bFullscreen ? TEXT("si") : TEXT("no")),
 			FString::Printf(TEXT("Salida de audio: %s"), D->GetDevices() ? *D->GetDevices()->CurrentName() : TEXT("")),
 		};
-		for (int32 i = 0; i < 6; ++i) { B += TEXT("  ") + Rows[i] + TEXT("\n"); }
+		for (int32 i = 0; i < GatewaySettingsRows; ++i) { B += TEXT("  ") + Rows[i] + TEXT("\n"); }
 		HiRow = Sel; HiWidth = 200.f;
+		if (Sel == 4)
+		{
+			B += TEXT(" \n") + Wrap(TEXT("Audio libre: al comenzar una sesion la imagen se apaga y solo suena el audio, para quitarte el visor y dormir (sesiones 4.1, 5, 14 y 16). Cualquier boton vuelve a encender la imagen.\n\nPara que el Quest no se duerma al quitartelo, en el visor: Ajustes > Sistema > Energia > Suspension automatica del visor: 4 horas (o nunca)."), 88);
+		}
 		Ft = TEXT("Stick der arriba/abajo: elegir   izq/der: ajustar   A: entrar   B: volver");
 		break;
 	}
@@ -243,7 +248,7 @@ void AGatewayVRPanel::Tick(float DeltaSeconds)
 	{
 		const FGatewaySessionDef* Cs = D->CurrentSession();
 		const FGatewaySegment* Sg = D->CurrentSegment();
-		if ((D->bShowOverlay || D->IsPaused()) && Cs && !Cs->bNight)
+		if ((D->bShowOverlay || D->IsPaused()) && Cs && !Cs->bNight && !D->IsAudioOnlyActive())
 		{
 			const int32 E = int32(D->GetElapsed()), Tt = int32(Cs->TotalSeconds);
 			Ov = FString::Printf(TEXT("%s\n%s\n%d:%02d / %d:%02d%s"), *Cs->Title, Sg ? *Sg->Name : TEXT(""), E / 60, E % 60, Tt / 60, Tt % 60, D->IsPaused() ? TEXT("\n\nPAUSA  (A continuar, B terminar)") : TEXT(""));

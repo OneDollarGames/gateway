@@ -9,7 +9,7 @@ public class W { [DllImport("user32.dll")] public static extern bool SetProcessD
 $p = Get-Process UnrealEditor -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowTitle -like "Gateway (64-bit*" } | Select-Object -First 1
 if (-not $p) { Write-Output "sin ventana del juego"; exit 1 }
 Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.Forms.SendKeys]::SendWait("%")
+# (sin SendKeys: "%" disparaba Alt y cambiaba de pantalla)
 [W]::SetForegroundWindow($p.MainWindowHandle) | Out-Null
 Start-Sleep -Milliseconds 300
 [W]::SetForegroundWindow($p.MainWindowHandle) | Out-Null

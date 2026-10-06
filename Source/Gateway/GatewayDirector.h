@@ -31,8 +31,11 @@ struct FGatewaySettings
 	UPROPERTY() float VolNoise = 0.8f;
 	UPROPERTY() bool bFlickerConsent = false;
 	UPROPERTY() bool bFullscreen = true;
+	UPROPERTY() bool bAudioOnly = false;     // audio libre: la sesion corre a oscuras (visor quitado) hasta pulsar un boton
 	UPROPERTY() FString PreferredDevice;     // subcadena del nombre (p.ej. "AirPods")
 };
+
+static constexpr int32 GatewaySettingsRows = 7;
 
 // Director de la experiencia: menu, ajustes, dispositivos y la maquina de estados de la sesion.
 // Lee las sesiones JSON de Content/Gateway/Sessions, manda el audio al sintetizador y el
@@ -83,6 +86,10 @@ public:
 	void AcceptWarning();
 	void ToggleFullscreen();
 	void ShowOverlay(float Seconds = 6.f) { bShowOverlay = true; OverlayTimer = Seconds; }
+	// Audio libre: true mientras la sesion corre a oscuras. Cualquier boton lo apaga (y se consume).
+	bool IsAudioOnlyActive() const { return bAudioOnlyActive; }
+	bool ConsumeAudioOnly();
+	void SetAudioOnly(bool bOn);
 
 	UPROPERTY() UGatewaySynth* Synth = nullptr;
 	UPROPERTY() AGatewayStage* Stage = nullptr;
@@ -103,6 +110,7 @@ private:
 	float FinishedTimer = 0.f;
 	float DeviceRefreshTimer = 0.f;
 	bool bLoggedThisSession = false;
+	bool bAudioOnlyActive = false;
 
 	void ApplySegment(int32 Index);
 	void FinishSession(bool bCompleted);

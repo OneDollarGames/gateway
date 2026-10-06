@@ -76,7 +76,7 @@ bool UGatewaySessionLibrary::LoadSession(const FString& JsonPath, FGatewaySessio
 	Out.Id = Str(Root, TEXT("id"), FPaths::GetBaseFilename(JsonPath));
 	Out.Title = Str(Root, TEXT("titulo"), Out.Id);
 	Out.Wave = Str(Root, TEXT("onda"));
-	Out.Order = int32(Num(Root, TEXT("orden"), 0));
+	Out.Order = Num(Root, TEXT("orden"), 0);
 	Out.Description = Str(Root, TEXT("descripcion"));
 	Out.Requires = Str(Root, TEXT("requiere"));
 	Out.bSleep = Bool(Root, TEXT("dormir"), false);
